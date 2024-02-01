@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:my-angular-storybook-project": "node dist/my-angular-storybook-project/server/server.mjs"
+    "serve:ssr:my-angular-storybook-project": "node dist/my-angular-storybook-project/server/server.mjs",
+    "storybook": "ng run my-angular-storybook-project:storybook",
+    "build-storybook": "ng run my-angular-storybook-project:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +32,14 @@
     "@angular-devkit/build-angular": "^17.1.2",
     "@angular/cli": "^17.1.2",
     "@angular/compiler-cli": "^17.1.0",
+    "@compodoc/compodoc": "^1.1.23",
+    "@storybook/addon-docs": "^7.6.12",
+    "@storybook/addon-essentials": "^7.6.12",
+    "@storybook/addon-interactions": "^7.6.12",
+    "@storybook/addon-links": "^7.6.12",
+    "@storybook/angular": "^7.6.12",
+    "@storybook/blocks": "^7.6.12",
+    "@storybook/test": "^7.6.12",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
@@ -39,6 +49,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.12",
     "typescript": "~5.3.2"
   }
 }
