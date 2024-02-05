@@ -10,7 +10,8 @@
     "serve:ssr:my-angular-storybook-project": "node dist/my-angular-storybook-project/server/server.mjs",
     "storybook": "ng run my-angular-storybook-project:storybook",
     "format": "prettier --write src/",
-    "build-storybook": "ng run my-angular-storybook-project:build-storybook"
+    "build-storybook": "ng run my-angular-storybook-project:build-storybook",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,11 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.1.2",
+    "@angular-eslint/builder": "17.2.1",
+    "@angular-eslint/eslint-plugin": "17.2.1",
+    "@angular-eslint/eslint-plugin-template": "17.2.1",
+    "@angular-eslint/schematics": "17.2.1",
+    "@angular-eslint/template-parser": "17.2.1",
     "@angular/cli": "^17.1.2",
     "@angular/compiler-cli": "^17.1.0",
     "@compodoc/compodoc": "^1.1.23",
@@ -44,6 +50,9 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
+    "eslint": "^8.56.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
