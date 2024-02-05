@@ -9,6 +9,7 @@
     "test": "ng test",
     "serve:ssr:my-angular-storybook-project": "node dist/my-angular-storybook-project/server/server.mjs",
     "storybook": "ng run my-angular-storybook-project:storybook",
+    "format": "prettier --write src/",
     "build-storybook": "ng run my-angular-storybook-project:build-storybook"
   },
   "private": true,
@@ -49,6 +50,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.12",
