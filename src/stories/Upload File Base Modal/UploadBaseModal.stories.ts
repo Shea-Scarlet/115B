@@ -9,10 +9,11 @@ const meta: Meta<UploadBaseModal> = {
   component: UploadBaseModal,
   parameters: {
     layout: 'fullscreen',
-    docs:{
-      description:{
+    docs: {
+      description: {
         // Add component description here:
-        component: "This component renders a base modal with the added functionality \
+        component:
+          'This component renders a base modal with the added functionality \
         of being able to upload file(s) to it. The component consists of the base modal\
         accompanied by at least one inner element that prompts the user to upload a file.\
         The inner element is a large button that consists of an icon and 2 strings of \
@@ -20,9 +21,9 @@ const meta: Meta<UploadBaseModal> = {
         onboarding guide, and another at the bottom that only becomes clickable after the\
         user uploads a file. There are 3 possible states: before a user interacts with any\
         part of the component, after the user uploads a file, and when the user clicks on\
-        the x button to close the onboarding guide."
-      }
-    }
+        the x button to close the onboarding guide.',
+      },
+    },
   },
 };
 
