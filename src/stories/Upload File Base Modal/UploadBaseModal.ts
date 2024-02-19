@@ -10,9 +10,7 @@ import type { User } from '../user';
   template: `<article>
     <section class="Upload-BaseModal">
       <h2>Upload File Base Model Component</h2>
-      <p>
-        Upload File Base Modal implementation coming soon!
-      </p>
+      <p>Upload File Base Modal implementation coming soon!</p>
     </section>
   </article>`,
   styleUrls: ['./UploadBaseModal.css'],
