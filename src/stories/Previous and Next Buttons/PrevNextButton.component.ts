@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'storybook-button',
+  selector: 'PrevNext-Button',
   standalone: true,
   imports: [CommonModule],
   template: ` <button
@@ -13,9 +13,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   >
     {{ label }}
   </button>`,
-  styleUrls: ['./button.css'],
+  styleUrls: ['./PrevNextButton.css'],
 })
-export class ButtonComponent {
+export class PrevNextButtonComponent {
   /**
    * Is this the principal call to action on the page?
    */
@@ -50,9 +50,9 @@ export class ButtonComponent {
 
   public get classes(): string[] {
     const mode = this.primary
-      ? 'storybook-button--primary'
-      : 'storybook-button--secondary';
+      ? 'PrevNext-Button--primary'
+      : 'PrevNext-Button--secondary';
 
-    return ['storybook-button', `storybook-button--${this.size}`, mode];
+    return ['PrevNext-Button', `PrevNext-Button--${this.size}`, mode];
   }
 }
