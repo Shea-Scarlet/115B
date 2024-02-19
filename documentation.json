@@ -219,6 +219,64 @@
             }
         },
         {
+            "name": "Card",
+            "id": "component-Card-529569656a217374060bf16c54cf35bc6cb608365ff486ca2f33e8ff38ce651bf025594d3f00063b8331f3c07f52072a8dddac54c1d1581770e43fc98eac4869",
+            "file": "src/stories/Card/Card.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Card",
+            "styleUrls": [
+                "./Card.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"Card\">\n      <h2>Base Modal Component</h2>\n      <p>Base Modal implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'Card',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"Card\">\n      <h2>Base Modal Component</h2>\n      <p>Base Modal implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./Card.css'],\n})\nexport class Card {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./Card.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-cf2833c0ed026e2708310372a9c59614d1ed7cfa0d3d16faa34c3c45c955f083dc25a5415e2e71cccce80a85b07314fa7a29593455cb80668a5e92059155cc3b",
             "file": "src/stories/header.component.ts",
@@ -736,6 +794,16 @@
                 "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
             },
             {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "bootstrap",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -864,6 +932,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<UploadBaseModal>",
                 "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: UploadBaseModal,\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'This component renders a base modal with the added functionality \\\n        of being able to upload file(s) to it. The component consists of the base modal\\\n        accompanied by at least one inner element that prompts the user to upload a file.\\\n        The inner element is a large button that consists of an icon and 2 strings of \\\n        text. The other elements of this components are 2 buttons, one for closing the\\\n        onboarding guide, and another at the bottom that only becomes clickable after the\\\n        user uploads a file. There are 3 possible states: before a user interacts with any\\\n        part of the component, after the user uploads a file, and when the user clicks on\\\n        the x button to close the onboarding guide.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Card>",
+                "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'TBA',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "PlaceHolder0",
@@ -1043,6 +1121,17 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Card>",
+                "file": "src/stories/Card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
             }
         ],
         "enumerations": [],
@@ -1057,6 +1146,28 @@
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
                     "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
+                }
+            ],
+            "src/stories/Card/Card.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Card/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Card/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Card>",
+                    "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'TBA',\n      },\n    },\n  },\n}"
                 }
             ],
             "src/main.server.ts": [
@@ -1398,12 +1509,25 @@
                     "description": "",
                     "kind": 183
                 }
+            ],
+            "src/stories/Card/Card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Card>",
+                    "file": "src/stories/Card/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
             ]
         }
     },
     "routes": [],
     "coverage": {
-        "count": 7,
+        "count": 6,
         "status": "low",
         "files": [
             {
@@ -1502,6 +1626,35 @@
                 "name": "PlaceHolder1",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Card",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
