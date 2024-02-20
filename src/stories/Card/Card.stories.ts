@@ -24,4 +24,4 @@ export default meta;
 type Story = StoryObj<Card>;
 
 // Exports story to storybook render
-export const Base: Story = {};
+export const BaseCard: Story = {};
