@@ -1162,6 +1162,64 @@
             "extends": []
         },
         {
+            "name": "ValidationCheck",
+            "id": "component-ValidationCheck-e3831ee15a1f0c6946ca806d42ab91de4881e9ccd28977d937a169eeab174ab795e8427f84c0bb4598cfc73d24ea1f2bd8725e4e6aa7812dbc5e8bbafcbb19ce",
+            "file": "src/stories/ValidationCheck/ValidationCheck.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ValidationCheck",
+            "styleUrls": [
+                "./ValidationCheck.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"ValidationCheck\">\n      <h2>Validation Check Off</h2>\n      <p>Validation Check implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'ValidationCheck',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"ValidationCheck\">\n      <h2>Validation Check Off</h2>\n      <p>Validation Check implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./ValidationCheck.css'],\n})\nexport class ValidationCheck {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".ValidationCheck {\n    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 48px 20px;\n    margin: 0 auto;\n    max-width: 600px;\n    color: #333;\n  }\n  \n  .ValidationCheck h2 {\n    font-weight: 700;\n    font-size: 32px;\n    line-height: 1;\n    margin: 0 0 4px;\n    display: inline-block;\n    vertical-align: top;\n  }\n  \n  .ValidationCheck p {\n    margin: 1em 0;\n  }\n  \n  .ValidationCheck a {\n    text-decoration: none;\n    color: #1ea7fd;\n  }\n  \n  .ValidationCheck ul {\n    padding-left: 30px;\n    margin: 1em 0;\n  }\n  \n  .ValidationCheck li {\n    margin-bottom: 8px;\n  }\n  \n  .ValidationCheck .tip {\n    display: inline-block;\n    border-radius: 1em;\n    font-size: 11px;\n    line-height: 12px;\n    font-weight: 700;\n    background: #e7fdd8;\n    color: #66bf3c;\n    padding: 4px 12px;\n    margin-right: 10px;\n    vertical-align: top;\n  }\n  \n  .ValidationCheck .tip-wrapper {\n    font-size: 13px;\n    line-height: 20px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n  }\n  \n  .ValidationCheck .tip-wrapper svg {\n    display: inline-block;\n    height: 12px;\n    width: 12px;\n    margin-right: 4px;\n    vertical-align: top;\n    margin-top: 3px;\n  }\n  \n  .ValidationCheck .tip-wrapper svg path {\n    fill: #1ea7fd;\n  }",
+                    "styleUrl": "./ValidationCheck.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "YesNoButtons",
             "id": "component-YesNoButtons-1a2bb001d98aca3a5882353938989e9b7efdcbe6e55ce6f5415cee467b952d807b1fd854677b05a32afea77dc480aa89a748a124954fac1ac87d4ea3e78a1775",
             "file": "src/stories/YesNoButttons/YesNoButtons.ts",
@@ -1218,6 +1276,64 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "YesNoExpButton",
+            "id": "component-YesNoExpButton-f9af769254de86e5f527162453d71261edba24c436faab4b5d2cf9a5def24e515c854b6ec50e7fe4068146e5b6ba5ff4678ed232c6f91ca60d3349d75442101d",
+            "file": "src/stories/YesNoButtonExp/YesNoExpButton.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "YesNoExpButton",
+            "styleUrls": [
+                "./YesNoExpButton.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"YesNoExpButton\">\n      <h2>Yes No Buttons Expansion Component</h2>\n      <p>Yes No Button Expansion implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'YesNoExpButton',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"YesNoExpButton\">\n      <h2>Yes No Buttons Expansion Component</h2>\n      <p>Yes No Button Expansion implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./YesNoExpButton.css'],\n})\nexport class YesNoExpButton {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".YesNoExpButton {\n    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 48px 20px;\n    margin: 0 auto;\n    max-width: 600px;\n    color: #333;\n  }\n  \n  .YesNoExpButton h2 {\n    font-weight: 700;\n    font-size: 32px;\n    line-height: 1;\n    margin: 0 0 4px;\n    display: inline-block;\n    vertical-align: top;\n  }\n  \n  .YesNoExpButton p {\n    margin: 1em 0;\n  }\n  \n  .YesNoExpButton a {\n    text-decoration: none;\n    color: #1ea7fd;\n  }\n  \n  .YesNoExpButton ul {\n    padding-left: 30px;\n    margin: 1em 0;\n  }\n  \n  .YesNoExpButton li {\n    margin-bottom: 8px;\n  }\n  \n  .YesNoExpButton .tip {\n    display: inline-block;\n    border-radius: 1em;\n    font-size: 11px;\n    line-height: 12px;\n    font-weight: 700;\n    background: #e7fdd8;\n    color: #66bf3c;\n    padding: 4px 12px;\n    margin-right: 10px;\n    vertical-align: top;\n  }\n  \n  .YesNoExpButton .tip-wrapper {\n    font-size: 13px;\n    line-height: 20px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n  }\n  \n  .YesNoExpButton .tip-wrapper svg {\n    display: inline-block;\n    height: 12px;\n    width: 12px;\n    margin-right: 4px;\n    vertical-align: top;\n    margin-top: 3px;\n  }\n  \n  .YesNoExpButton .tip-wrapper svg path {\n    fill: #1ea7fd;\n  }",
+                    "styleUrl": "./YesNoExpButton.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
         }
     ],
     "modules": [],
@@ -1232,6 +1348,26 @@
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
                 "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "Base",
@@ -1377,26 +1513,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<PopUpFormButtonComponent>",
-                "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Card/Card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<Card>",
-                "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'Cards have the ability to contain a custom title and description elements allowing it to\\\n          act as a full more informed button or take on more elements like a logo as well as some other\\\n          data fields for the user to see as well as a user-interactable checkbox for more of a check-list use',\n      },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1407,11 +1523,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PopUpFormButtonComponent>",
+                "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonsWithLinksComponent>",
                 "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<Card>",
+                "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'Cards have the ability to contain a custom title and description elements allowing it to\\\n          act as a full more informed button or take on more elements like a logo as well as some other\\\n          data fields for the user to see as well as a user-interactable checkbox for more of a check-list use',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1442,6 +1578,26 @@
                 "deprecationMessage": "",
                 "type": "Meta<UploadBaseModal>",
                 "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: UploadBaseModal,\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'This component renders a base modal with the added functionality \\\n        of being able to upload file(s) to it. The component consists of the base modal\\\n        accompanied by at least one inner element that prompts the user to upload a file.\\\n        The inner element is a large button that consists of an icon and 2 strings of \\\n        text. The other elements of this components are 2 buttons, one for closing the\\\n        onboarding guide, and another at the bottom that only becomes clickable after the\\\n        user uploads a file. There are 3 possible states: before a user interacts with any\\\n        part of the component, after the user uploads a file, and when the user clicks on\\\n        the x button to close the onboarding guide.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ValidationCheck>",
+                "defaultValue": "{\n  title: 'Validation Check Off',\n  component: ValidationCheck,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Validation Check Off will be used to have the user verify that\\\n          they have correctly inputted the information before they continue to\\\n          the next page.',\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<YesNoExpButton>",
+                "defaultValue": "{\n  title: 'Yes No Buttons Expansion',\n  component: YesNoExpButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Yes No Buttons can be used as a selector for use in body boxes\\\n          where the task can be optional saving the users choice as the buttons\\\n          final state. However this button expands when the user fills in the Yes\\\n          or No option. This allows the engineer to add another portion of the\\\n          form for the user to fill out.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1674,28 +1830,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PopUpFormButtonComponent>",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 183
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<Card>",
-                "file": "src/stories/Card/Card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 183
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<PopUpDialogueButtonComponent>",
                 "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
                 "deprecated": false,
@@ -1707,8 +1841,30 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<PopUpFormButtonComponent>",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonsWithLinksComponent>",
                 "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<Card>",
+                "file": "src/stories/Card/Card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1751,6 +1907,28 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<ValidationCheck>",
+                "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<YesNoExpButton>",
+                "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<YesNoButtons>",
                 "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "deprecated": false,
@@ -1771,6 +1949,50 @@
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
                     "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
+                }
+            ],
+            "src/stories/ValidationCheck/ValidationCheck.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ValidationCheck>",
+                    "defaultValue": "{\n  title: 'Validation Check Off',\n  component: ValidationCheck,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Validation Check Off will be used to have the user verify that\\\n          they have correctly inputted the information before they continue to\\\n          the next page.',\n      },\n    },\n  },\n}"
+                }
+            ],
+            "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<YesNoExpButton>",
+                    "defaultValue": "{\n  title: 'Yes No Buttons Expansion',\n  component: YesNoExpButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Yes No Buttons can be used as a selector for use in body boxes\\\n          where the task can be optional saving the users choice as the buttons\\\n          final state. However this button expands when the user fills in the Yes\\\n          or No option. This allows the engineer to add another portion of the\\\n          form for the user to fill out.',\n      },\n    },\n  },\n}"
                 }
             ],
             "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
@@ -1989,38 +2211,6 @@
                     "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
                 }
             ],
-            "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<PopUpFormButtonComponent>",
-                    "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder0",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder1",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
-                }
-            ],
             "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts": [
                 {
                     "name": "meta",
@@ -2051,6 +2241,38 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: { \n    size: 'large',\n    label: '?',\n  },\n}"
+                }
+            ],
+            "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<PopUpFormButtonComponent>",
+                    "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder0",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
             "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
@@ -2249,32 +2471,6 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<PopUpFormButtonComponent>",
-                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
-            "src/stories/Card/Card.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<Card>",
-                    "file": "src/stories/Card/Card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts": [
                 {
                     "name": "Story",
@@ -2288,6 +2484,19 @@
                     "kind": 183
                 }
             ],
+            "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PopUpFormButtonComponent>",
+                    "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
                 {
                     "name": "Story",
@@ -2295,6 +2504,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonsWithLinksComponent>",
                     "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/Card/Card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<Card>",
+                    "file": "src/stories/Card/Card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2340,6 +2562,32 @@
                     "kind": 183
                 }
             ],
+            "src/stories/ValidationCheck/ValidationCheck.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ValidationCheck>",
+                    "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<YesNoExpButton>",
+                    "file": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
                 {
                     "name": "Story",
@@ -2357,7 +2605,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 7,
+        "count": 6,
         "status": "low",
         "files": [
             {
@@ -2707,6 +2955,64 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "UploadBaseModal",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/ValidationCheck/ValidationCheck.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ValidationCheck",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButtonExp/YesNoExpButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButtonExp/YesNoExpButton.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "YesNoExpButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
