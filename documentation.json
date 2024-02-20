@@ -144,6 +144,64 @@
             "extends": []
         },
         {
+            "name": "BodyBox",
+            "id": "component-BodyBox-57dfae0b8f0b916d9ebf968b8836a98d90543e4ee927c46e9c9c40aa910545950c6abdb2a8805c0b8fb3c7d6179df59188929d0b24540da745572485bb9a22d8",
+            "file": "src/stories/Body Box/BodyBox.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "BodyBox",
+            "styleUrls": [
+                "./BodyBox.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"BodyBox\">\n      <h2>Body Box Component</h2>\n      <p>Body Box implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'BodyBox',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"BodyBox\">\n      <h2>Body Box Component</h2>\n      <p>Body Box implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./BodyBox.css'],\n})\nexport class BodyBox {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./BodyBox.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-683379336ffb219f6436bbd1b787cda04501deba0070c9e038bc4291bf272da49711c7bad5294c1613e2ffc014331fe9d615d67def1b9d20484cb47ec1b66003",
             "file": "src/stories/button.component.ts",
@@ -469,19 +527,19 @@
         },
         {
             "name": "CheckMarkButton",
-            "id": "component-CheckMarkButton-50686b245e7850357b2457e5b6947db2c3ba1e7f22c195a8c16b71a0a5f6631f4d52cf85772b039edf61fb6d51aef2cb1e0be50cd6f3fc4e4230e32b231a6dc2",
+            "id": "component-CheckMarkButton-94a17dddc7a463099afcd26951648f3916cf5ea449ffa7e9be200864b32722fd8754e718f3d85c01172030e651f591315cfab9df17917982e4f9c9690e1f23ea",
             "file": "src/stories/CheckMarkButton/CheckMarkButton.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "CheckMark Button",
+            "selector": "CheckMarkButton",
             "styleUrls": [
                 "./CheckMarkButton.css"
             ],
             "styles": [],
-            "template": "<article>    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>\n        Check Mark Button implementation coming soon!\n      </p>\n    </section>\n  </article>",
+            "template": "<article>    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>Check Mark Button implementation tba</p>\n    </section>\n  </article>",
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -496,7 +554,7 @@
                     "type": "User | null",
                     "optional": false,
                     "description": "",
-                    "line": 21
+                    "line": 19
                 }
             ],
             "methodsClass": [],
@@ -514,7 +572,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'CheckMark Button',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>\n        Check Mark Button implementation coming soon!\n      </p>\n    </section>\n  </article>`,\n  styleUrls: ['./CheckMarkButton.css'],\n})\nexport class CheckMarkButton {\n  user: User | null = null;\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'CheckMarkButton',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>Check Mark Button implementation tba</p>\n    </section>\n  </article>`,\n  styleUrls: ['./CheckMarkButton.css'],\n})\nexport class CheckMarkButton {\n  user: User | null = null;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1104,6 +1162,64 @@
             }
         },
         {
+            "name": "QuestionMarkAccordionButton",
+            "id": "component-QuestionMarkAccordionButton-57d66f6a91f99d64de48353fd434d4d9adc0623aad87aa875366c753a59f344a85a39fc61dcaebd3b42dc356bbe1f45cab05af1ab3a6d3922228dab0f7654ef9",
+            "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "QuestionMarkAccordionButton",
+            "styleUrls": [
+                "./QuestionMarkAccordionButton.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"QuestionMarkAccordionButton\">\n      <h2>Question Mark Accordion Button Component</h2>\n      <p>Question Mark Accordion Component implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'QuestionMarkAccordionButton',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"QuestionMarkAccordionButton\">\n      <h2>Question Mark Accordion Button Component</h2>\n      <p>Question Mark Accordion Component implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./QuestionMarkAccordionButton.css'],\n})\nexport class QuestionMarkAccordionButton {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./QuestionMarkAccordionButton.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "SaveContButton",
             "id": "component-SaveContButton-810056a392d8adbfb766438061900756b995fd36a873ebce5248e5cf9b102e3ca621f7c640866e13f57a75cce8b289bc33f6d8088d1387b13ef996020b940db6",
             "file": "src/stories/SaveContButton/SaveContButton.ts",
@@ -1458,6 +1574,16 @@
                 "defaultValue": "() => bootstrapApplication(AppComponent, config)"
             },
             {
+                "name": "BoxDiv",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Body Box/BodyBox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "Checkmark",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1571,21 +1697,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "file": "src/stories/Base Modal/BaseModal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<PopUpFormButtonComponent>",
-                "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<BaseModal>",
+                "defaultValue": "{\n  title: 'Base Modal',\n  component: BaseModal,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Base Modal acts as a default frame for components that can be dynamically added as needed.\\\n          The header contains three editable text boxes that changes based on tab drawer state or for use in pop up prompts.\\\n          The body portion of the modal can contain body box components or cards when used as a pop up selection.\\\n          The footer is available for button placement like next/previous or save and continue in cases where the modal is used as a pop up prompt.\\\n          Every element can be dynamically added or forgone as needed by the engineer.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "file": "src/stories/Body Box/BodyBox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonsWithLinksComponent>",
-                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<BodyBox>",
+                "defaultValue": "{\n  title: 'BodyBox',\n  component: BodyBox,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'BodyBox have the ability to contain any component and description elements allowing it to create\\\n          responsive layouts with ease. By default, it should render \\'div\\' element. Provides a shorthand way\\\n          to pass styles via props.'\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PopUpFormButtonComponent>",
+                "defaultValue": "{\n  title: 'Pop Up Form Buttons',\n  component: PopUpFormButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Form buttons renders a pop up base modal when clicked.\\\n        The new base modal that pops up is defined by the context in which the button\\\n        was created. For example, the base modal that pops up could be the upload file\\\n        base modal, the pdf viewer base modal, etc.\"\n      }\n    }\n  },\n  render: (args: PopUpFormButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1601,11 +1737,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Base Modal/BaseModal.stories.ts",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<BaseModal>",
-                "defaultValue": "{\n  title: 'Base Modal',\n  component: BaseModal,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Base Modal acts as a default frame for components that can be dynamically added as needed.\\\n          The header contains three editable text boxes that changes based on tab drawer state or for use in pop up prompts.\\\n          The body portion of the modal can contain body box components or cards when used as a pop up selection.\\\n          The footer is available for button placement like next/previous or save and continue in cases where the modal is used as a pop up prompt.\\\n          Every element can be dynamically added or forgone as needed by the engineer.',\n      },\n    },\n  },\n}"
+                "type": "Meta<ButtonsWithLinksComponent>",
+                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1636,6 +1772,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<PrevNextButtonComponent>",
                 "defaultValue": "{\n  title: 'Previous and Next Buttons',\n  component: PrevNextButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Previous and Next buttons add aditional control to how the user\\\n        navigates from one tab to the next.\"\n      }\n    }\n  },\n  render: (args: PrevNextButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<QuestionMarkAccordionButton>",
+                "defaultValue": "{\n  title: 'QuestionMarkAccordionButton',\n  component: QuestionMarkAccordionButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Question Mark Accordion Button is used to display helper messages, allowing it to\\\n          guide the users.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1828,6 +1974,16 @@
                 "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
             },
             {
+                "name": "QuestionMarkAccordion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1897,8 +2053,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PopUpFormButtonComponent>",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "rawtype": "StoryObj<BaseModal>",
+                "file": "src/stories/Base Modal/BaseModal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1908,8 +2064,19 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "rawtype": "StoryObj<BodyBox>",
+                "file": "src/stories/Body Box/BodyBox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PopUpFormButtonComponent>",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1930,8 +2097,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<BaseModal>",
-                "file": "src/stories/Base Modal/BaseModal.stories.ts",
+                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1965,6 +2132,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<PrevNextButtonComponent>",
                 "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<QuestionMarkAccordionButton>",
+                "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2138,6 +2316,28 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "() => bootstrapApplication(AppComponent, config)"
+                }
+            ],
+            "src/stories/Body Box/BodyBox.stories.ts": [
+                {
+                    "name": "BoxDiv",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Body Box/BodyBox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Body Box/BodyBox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<BodyBox>",
+                    "defaultValue": "{\n  title: 'BodyBox',\n  component: BodyBox,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'BodyBox have the ability to contain any component and description elements allowing it to create\\\n          responsive layouts with ease. By default, it should render \\'div\\' element. Provides a shorthand way\\\n          to pass styles via props.'\n      },\n    },\n  },\n}"
                 }
             ],
             "src/stories/CheckMarkButton/CheckMarkButton.stories.ts": [
@@ -2354,38 +2554,6 @@
                     "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<ButtonsWithLinksComponent>",
-                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder0",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder1",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
-                }
-            ],
             "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts": [
                 {
                     "name": "meta",
@@ -2418,6 +2586,38 @@
                     "defaultValue": "{\n  args: { \n    size: 'large',\n    label: '?',\n  },\n}"
                 }
             ],
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonsWithLinksComponent>",
+                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder0",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                }
+            ],
             "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
                 {
                     "name": "meta",
@@ -2448,6 +2648,28 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                }
+            ],
+            "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<QuestionMarkAccordionButton>",
+                    "defaultValue": "{\n  title: 'QuestionMarkAccordionButton',\n  component: QuestionMarkAccordionButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Question Mark Accordion Button is used to display helper messages, allowing it to\\\n          guide the users.',\n      },\n    },\n  },\n}"
+                },
+                {
+                    "name": "QuestionMarkAccordion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
                 }
             ],
             "src/stories/Tab Drawer/TabDrawer.stories.ts": [
@@ -2569,6 +2791,32 @@
                     "kind": 183
                 }
             ],
+            "src/stories/Base Modal/BaseModal.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<BaseModal>",
+                    "file": "src/stories/Base Modal/BaseModal.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/Body Box/BodyBox.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<BodyBox>",
+                    "file": "src/stories/Body Box/BodyBox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
                 {
                     "name": "Story",
@@ -2576,19 +2824,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<PopUpFormButtonComponent>",
                     "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2608,13 +2843,13 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Base Modal/BaseModal.stories.ts": [
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<BaseModal>",
-                    "file": "src/stories/Base Modal/BaseModal.stories.ts",
+                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2654,6 +2889,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<PrevNextButtonComponent>",
                     "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<QuestionMarkAccordionButton>",
+                    "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2816,6 +3064,35 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "BaseModal",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BoxDiv",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BodyBox",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -3032,6 +3309,35 @@
                 "name": "PlaceHolder1",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "QuestionMarkAccordion",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuestionMarkAccordionButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
