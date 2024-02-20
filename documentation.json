@@ -333,7 +333,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".PrevNext-Button {\n    font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 700;\n    border: 0;\n    border-radius: 3em;\n    cursor: pointer;\n    display: inline-block;\n    line-height: 1;\n  }\n  .PrevNext-Button--primary {\n    color: white;\n    background-color: #1ea7fd;\n  }\n  .PrevNext-Button--secondary {\n    color: #333;\n    background-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n  }\n  .PrevNext-Button--small {\n    font-size: 12px;\n    padding: 10px 16px;\n  }\n  .PrevNext-Button--medium {\n    font-size: 14px;\n    padding: 11px 20px;\n  }\n  .PrevNext-Button--large {\n    font-size: 16px;\n    padding: 12px 24px;\n  }\n  ",
+                    "data": ".Link-Button {\n    font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 700;\n    border: 0;\n    border-radius: 3em;\n    cursor: pointer;\n    display: inline-block;\n    line-height: 1;\n  }\n  .Link-Button--primary {\n    color: white;\n    background-color: #1ea7fd;\n  }\n  .Link-Button--secondary {\n    color: #333;\n    background-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n  }\n  .Link-Button--small {\n    font-size: 12px;\n    padding: 10px 16px;\n  }\n  .Link-Button--medium {\n    font-size: 14px;\n    padding: 11px 20px;\n  }\n  .Link-Button--large {\n    font-size: 16px;\n    padding: 12px 24px;\n  }\n  ",
                     "styleUrl": "./ButtonsWithLinks.css"
                 }
             ],
@@ -645,7 +645,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".PopUpForm-Button {\n  font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.PopUpForm-Button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.PopUpForm-Button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.PopUpForm-Button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.PopUpForm-Button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.PopUpForm-Button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "data": ".PopUpDialogue-Button {\n  font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.PopUpDialogue-Button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.PopUpDialogue-Button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.PopUpDialogue-Button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.PopUpDialogue-Button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.PopUpDialogue-Button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
                     "styleUrl": "./PopUpDialogueButton.css"
                 }
             ],
@@ -930,6 +930,64 @@
             }
         },
         {
+            "name": "TabDrawer",
+            "id": "component-TabDrawer-138a1a2f24b68e3cba4a47a7cd6b4bf9e067b86163cf56a32b09862a0ab04291e48f9623822a5b7beb07b1d94d0c05eef5dd35210a7c16e399362de732b2b345",
+            "file": "src/stories/Tab Drawer/TabDrawer.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "TabDrawer",
+            "styleUrls": [
+                "./TabDrawer.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"TabDrawer\">\n      <h2>Tab Drawer Component</h2>\n      <p>Tab Drawer implementation coming soon!</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  // eslint-disable-next-line @angular-eslint/component-selector\n  selector: 'TabDrawer',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"TabDrawer\">\n      <h2>Tab Drawer Component</h2>\n      <p>Tab Drawer implementation coming soon!</p>\n    </section>\n  </article>`,\n  styleUrls: ['./TabDrawer.css'],\n})\n// eslint-disable-next-line @angular-eslint/component-class-suffix\nexport class TabDrawer {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".TabDrawer {\n  font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\n.TabDrawer h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.TabDrawer p {\n  margin: 1em 0;\n}\n\n.TabDrawer a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\n.TabDrawer ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\n.TabDrawer li {\n  margin-bottom: 8px;\n}\n\n.TabDrawer .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.TabDrawer .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.TabDrawer .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.TabDrawer .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./TabDrawer.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "UploadBaseModal",
             "id": "component-UploadBaseModal-8d9872bd131bb486a516cea4b929a6a3614151f0d886a303e00fdf1843f5467ececbade6a6900c3eef08cdcf0cb168ec2db0ae3d8c57486f8369eb163c6cc580",
             "file": "src/stories/Upload File Base Modal/UploadBaseModal.ts",
@@ -986,6 +1044,64 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "YesNoButtons",
+            "id": "component-YesNoButtons-1a2bb001d98aca3a5882353938989e9b7efdcbe6e55ce6f5415cee467b952d807b1fd854677b05a32afea77dc480aa89a748a124954fac1ac87d4ea3e78a1775",
+            "file": "src/stories/YesNoButttons/YesNoButtons.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "YesNoButtons",
+            "styleUrls": [
+                "./YesNoButtons.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"YesNoButtons\">\n      <h2>Yes No Buttons Component</h2>\n      <p>Yes No Button implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'YesNoButtons',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"YesNoButtons\">\n      <h2>Yes No Buttons Component</h2>\n      <p>Yes No Button implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./YesNoButtons.css'],\n})\nexport class YesNoButtons {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./YesNoButtons.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
         }
     ],
     "modules": [],
@@ -1000,6 +1116,16 @@
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
                 "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "bootstrap",
@@ -1115,6 +1241,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonsWithLinksComponent>",
+                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1125,11 +1261,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonsWithLinksComponent>",
-                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<PrevNextButtonComponent>",
+                "defaultValue": "{\n  title: 'Previous and Next Buttons',\n  component: PrevNextButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Previous and Next buttons add aditional control to how the user\\\n        navigates from one tab to the next.\"\n      }\n    }\n  },\n  render: (args: PrevNextButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1145,21 +1281,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<PrevNextButtonComponent>",
-                "defaultValue": "{\n  title: 'Previous and Next Buttons',\n  component: PrevNextButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Previous and Next buttons add aditional control to how the user\\\n        navigates from one tab to the next.\"\n      }\n    }\n  },\n  render: (args: PrevNextButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<TabDrawer>",
+                "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: TabDrawer,\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'This component renders the tab section above the base modal, where the user will see the title of the tab \\\n          as well as all the tab names, and click through them while completing the forms. \\\n          The tabs that are \"completed\" will be marked with a green checkmark.'\n      },\n    },\n  },\n}"
             },
             {
-                "name": "PlaceHolder0",
+                "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                "type": "Meta<YesNoButtons>",
+                "defaultValue": "{\n  title: 'Yes No Buttons',\n  component: YesNoButtons,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Yes No Buttons can be used as a selector for use in body boxes\\\n          where the task can be optional saving the users choice as the buttons final state.',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "PlaceHolder0",
@@ -1175,11 +1311,11 @@
                 "name": "PlaceHolder0",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{}"
+                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
             },
             {
                 "name": "PlaceHolder0",
@@ -1192,14 +1328,14 @@
                 "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
             },
             {
-                "name": "PlaceHolder1",
+                "name": "PlaceHolder0",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{}"
             },
             {
                 "name": "PlaceHolder1",
@@ -1215,11 +1351,11 @@
                 "name": "PlaceHolder1",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{}"
+                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
             },
             {
                 "name": "PlaceHolder1",
@@ -1230,6 +1366,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "PlaceHolder1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "PlaceHolder2",
@@ -1250,6 +1396,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: { \n    size: 'large',\n    label: '?',\n  },\n}"
+            },
+            {
+                "name": "PlaceHolder4",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "PlaceHolder5",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "preview",
@@ -1352,6 +1518,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<PopUpFormButtonComponent>",
                 "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
                 "deprecated": false,
@@ -1363,8 +1540,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "rawtype": "StoryObj<PrevNextButtonComponent>",
+                "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1385,8 +1562,19 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PrevNextButtonComponent>",
-                "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                "rawtype": "StoryObj<TabDrawer>",
+                "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<YesNoButtons>",
+                "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1405,6 +1593,28 @@
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
                     "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
+                }
+            ],
+            "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<YesNoButtons>",
+                    "defaultValue": "{\n  title: 'Yes No Buttons',\n  component: YesNoButtons,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Yes No Buttons can be used as a selector for use in body boxes\\\n          where the task can be optional saving the users choice as the buttons final state.',\n      },\n    },\n  },\n}"
                 }
             ],
             "src/main.server.ts": [
@@ -1589,6 +1799,38 @@
                     "defaultValue": "{\n  args: { \n    size: 'large',\n    label: '?',\n  },\n}"
                 }
             ],
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonsWithLinksComponent>",
+                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder0",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                }
+            ],
             "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
                 {
                     "name": "meta",
@@ -1621,32 +1863,32 @@
                     "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+            "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<ButtonsWithLinksComponent>",
-                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                    "type": "Meta<PrevNextButtonComponent>",
+                    "defaultValue": "{\n  title: 'Previous and Next Buttons',\n  component: PrevNextButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Previous and Next buttons add aditional control to how the user\\\n        navigates from one tab to the next.\"\n      }\n    }\n  },\n  render: (args: PrevNextButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
                 },
                 {
                     "name": "PlaceHolder0",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
                 },
                 {
                     "name": "PlaceHolder1",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1685,36 +1927,36 @@
                     "defaultValue": "{}"
                 }
             ],
-            "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
+            "src/stories/Tab Drawer/TabDrawer.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                    "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<PrevNextButtonComponent>",
-                    "defaultValue": "{\n  title: 'Previous and Next Buttons',\n  component: PrevNextButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Previous and Next buttons add aditional control to how the user\\\n        navigates from one tab to the next.\"\n      }\n    }\n  },\n  render: (args: PrevNextButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                    "type": "Meta<TabDrawer>",
+                    "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: TabDrawer,\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'This component renders the tab section above the base modal, where the user will see the title of the tab \\\n          as well as all the tab names, and click through them while completing the forms. \\\n          The tabs that are \"completed\" will be marked with a green checkmark.'\n      },\n    },\n  },\n}"
                 },
                 {
-                    "name": "PlaceHolder0",
+                    "name": "PlaceHolder4",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                    "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{}"
                 },
                 {
-                    "name": "PlaceHolder1",
+                    "name": "PlaceHolder5",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                    "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{}"
                 }
             ],
             ".storybook/preview.ts": [
@@ -1785,6 +2027,19 @@
                     "kind": 183
                 }
             ],
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
                 {
                     "name": "Story",
@@ -1798,13 +2053,13 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+            "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "rawtype": "StoryObj<PrevNextButtonComponent>",
+                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1824,13 +2079,26 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
+            "src/stories/Tab Drawer/TabDrawer.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<PrevNextButtonComponent>",
-                    "file": "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts",
+                    "rawtype": "StoryObj<TabDrawer>",
+                    "file": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<YesNoButtons>",
+                    "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1841,7 +2109,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 10,
+        "count": 8,
         "status": "low",
         "files": [
             {
@@ -2060,6 +2328,45 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/Tab Drawer/TabDrawer.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TabDrawer",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PlaceHolder4",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab Drawer/TabDrawer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PlaceHolder5",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2094,6 +2401,35 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "UploadBaseModal",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/YesNoButttons/YesNoButtons.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "YesNoButtons",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"

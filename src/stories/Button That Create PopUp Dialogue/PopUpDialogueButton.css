@@ -1,4 +1,4 @@
-.PopUpForm-Button {
+.PopUpDialogue-Button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -7,24 +7,24 @@
   display: inline-block;
   line-height: 1;
 }
-.PopUpForm-Button--primary {
+.PopUpDialogue-Button--primary {
   color: white;
   background-color: #1ea7fd;
 }
-.PopUpForm-Button--secondary {
+.PopUpDialogue-Button--secondary {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-.PopUpForm-Button--small {
+.PopUpDialogue-Button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.PopUpForm-Button--medium {
+.PopUpDialogue-Button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.PopUpForm-Button--large {
+.PopUpDialogue-Button--large {
   font-size: 16px;
   padding: 12px 24px;
 }
