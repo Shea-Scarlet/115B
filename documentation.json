@@ -410,6 +410,64 @@
             }
         },
         {
+            "name": "Card",
+            "id": "component-Card-333897816a52afbe88713de009d88a7a9db7184ca65b13dcc0689e600c7e2f8f1c48e8afc7a6db8f6ffe02aee8e0420640bacffa19526acb0bd8511860ca03aa",
+            "file": "src/stories/Card/Card.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Card",
+            "styleUrls": [
+                "./Card.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"Card\">\n      <h2>Card Component</h2>\n      <p>Card implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'Card',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"Card\">\n      <h2>Card Component</h2>\n      <p>Card implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./Card.css'],\n})\nexport class Card {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "/* Implementation coming soon */",
+                    "styleUrl": "./Card.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-cf2833c0ed026e2708310372a9c59614d1ed7cfa0d3d16faa34c3c45c955f083dc25a5415e2e71cccce80a85b07314fa7a29593455cb80668a5e92059155cc3b",
             "file": "src/stories/header.component.ts",
@@ -1186,6 +1244,16 @@
                 "defaultValue": "{}"
             },
             {
+                "name": "BaseCard",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Card/Card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "bootstrap",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1319,11 +1387,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "file": "src/stories/Card/Card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonsWithLinksComponent>",
-                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<Card>",
+                "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'Cards have the ability to contain a custom title and description elements allowing it to\\\n          act as a full more informed button or take on more elements like a logo as well as some other\\\n          data fields for the user to see as well as a user-interactable checkbox for more of a check-list use',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1334,6 +1402,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<PopUpDialogueButtonComponent>",
                 "defaultValue": "{\n  title: 'Pop Up Dialogue Buttons',\n  component: PopUpDialogueButtonComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The Pop Up Dialogue button renders a pop up dialogue window when clicked.\"\n      }\n    }\n  },\n  render: (args: PopUpDialogueButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonsWithLinksComponent>",
+                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1607,8 +1685,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "rawtype": "StoryObj<Card>",
+                "file": "src/stories/Card/Card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1620,6 +1698,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<PopUpDialogueButtonComponent>",
                 "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1704,6 +1793,28 @@
                     "deprecationMessage": "",
                     "type": "Meta<YesNoButtons>",
                     "defaultValue": "{\n  title: 'Yes No Buttons',\n  component: YesNoButtons,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Yes No Buttons can be used as a selector for use in body boxes\\\n          where the task can be optional saving the users choice as the buttons final state.',\n      },\n    },\n  },\n}"
+                }
+            ],
+            "src/stories/Card/Card.stories.ts": [
+                {
+                    "name": "BaseCard",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Card/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Card/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<Card>",
+                    "defaultValue": "{\n  title: 'Card',\n  component: Card,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'Cards have the ability to contain a custom title and description elements allowing it to\\\n          act as a full more informed button or take on more elements like a logo as well as some other\\\n          data fields for the user to see as well as a user-interactable checkbox for more of a check-list use',\n      },\n    },\n  },\n}"
                 }
             ],
             "src/main.server.ts": [
@@ -1910,38 +2021,6 @@
                     "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<ButtonsWithLinksComponent>",
-                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder0",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
-                },
-                {
-                    "name": "PlaceHolder1",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
-                }
-            ],
             "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts": [
                 {
                     "name": "meta",
@@ -1972,6 +2051,38 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: { \n    size: 'large',\n    label: '?',\n  },\n}"
+                }
+            ],
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonsWithLinksComponent>",
+                    "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder0",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button with Link',\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
             "src/stories/Previous and Next Buttons/PrevNextButton.stories.ts": [
@@ -2151,13 +2262,13 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+            "src/stories/Card/Card.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "rawtype": "StoryObj<Card>",
+                    "file": "src/stories/Card/Card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2171,6 +2282,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<PopUpDialogueButtonComponent>",
                     "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
+                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2233,7 +2357,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 8,
+        "count": 7,
         "status": "low",
         "files": [
             {
@@ -2439,6 +2563,35 @@
                 "name": "PlaceHolder1",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseCard",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Card/Card.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Card",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
