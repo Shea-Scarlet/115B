@@ -35,7 +35,7 @@
         {
             "name": "AppComponent",
             "id": "component-AppComponent-4763053402d8c1c0595dc0e8b4867894522097d629fc02812a6249a895bf164bcccbea07c0192477dae9ad2d0a50f8855cc076ce68ad73cae7cfaa42d85f4d83",
-            "file": "src/app/app.component.ts",
+            "file": "src/n/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -219,142 +219,6 @@
             }
         },
         {
-            "name": "ButtonComponent",
-            "id": "component-ButtonComponent-86e2311c54fbca7431c12e070d0fd5b0ebe343eec0553a392f182ba0e04a8f86613233d26ee47718fd0e7a65078f580c76a1fcc928ce55de81193d6618025bc4-1",
-            "file": "src/stories/Upload File Base Modal/button.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "storybook-button",
-            "styleUrls": [
-                "./button.css"
-            ],
-            "styles": [],
-            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [
-                {
-                    "name": "backgroundColor",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nWhat background color to use\n",
-                    "description": "<p>What background color to use</p>\n",
-                    "line": 29,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "label",
-                    "defaultValue": "'Button'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "pos": 798,
-                            "end": 811,
-                            "flags": 16842752,
-                            "modifierFlagsCache": 0,
-                            "transformFlags": 0,
-                            "kind": 334,
-                            "tagName": {
-                                "pos": 799,
-                                "end": 807,
-                                "flags": 16842752,
-                                "modifierFlagsCache": 0,
-                                "transformFlags": 0,
-                                "kind": 80,
-                                "escapedText": "required"
-                            },
-                            "comment": ""
-                        }
-                    ],
-                    "rawdescription": "\n\nButton contents\n\n",
-                    "description": "<p>Button contents</p>\n",
-                    "line": 43,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "primary",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
-                    "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 23,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "size",
-                    "defaultValue": "'medium'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nHow large should the button be?\n",
-                    "description": "<p>How large should the button be?</p>\n",
-                    "line": 35,
-                    "type": "\"small\" | \"medium\" | \"large\"",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onClick",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nOptional click handler\n",
-                    "description": "<p>Optional click handler</p>\n",
-                    "line": 49,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [
-                {
-                    "name": "CommonModule",
-                    "type": "module"
-                }
-            ],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
-                    "styleUrl": "./button.css"
-                }
-            ],
-            "stylesData": "",
-            "extends": [],
-            "accessors": {
-                "classes": {
-                    "name": "classes",
-                    "getSignature": {
-                        "name": "classes",
-                        "type": "[]",
-                        "returnType": "string[]",
-                        "line": 51
-                    }
-                }
-            },
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "ButtonComponent-1"
-        },
-        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-cad94b233ec8e80ceb541e7972c5f9737e08237b4e137112f3987ca48ee0cce5c0d57798d41daa5d4d24d6bdbb2df1606ab68cca2aa0a1785e38f99f3cac0729",
             "file": "src/stories/header.component.ts",
@@ -532,6 +396,64 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "UploadBaseModal",
+            "id": "component-UploadBaseModal-04f3b3be4cc617df134359733c3e213dda12b69d69fb4736fa7ffeb5f42fc279e74ceb09b0f7d2fd6ac71b763f9eda9820bc883383a09962ec17c5f2460d5dc7",
+            "file": "src/stories/Upload File Base Modal/UploadBaseModal.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Upload-BaseModal",
+            "styleUrls": [
+                "./UploadBaseModal.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"Upload-BaseModal\">\n      <h2>Upload File Base Model Component</h2>\n      <p>\n        Upload File Base Modal implementation coming soon!\n      </p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'Upload-BaseModal',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"Upload-BaseModal\">\n      <h2>Upload File Base Model Component</h2>\n      <p>\n        Upload File Base Modal implementation coming soon!\n      </p>\n    </section>\n  </article>`,\n  styleUrls: ['./UploadBaseModal.css'],\n})\nexport class UploadBaseModal {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".Upload-BaseModal {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\n.Upload-BaseModal h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.Upload-BaseModal p {\n  margin: 1em 0;\n}\n\n.Upload-BaseModal a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\n.Upload-BaseModal ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\n.Upload-BaseModal li {\n  margin-bottom: 8px;\n}\n\n.Upload-BaseModal .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.Upload-BaseModal .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.Upload-BaseModal .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.Upload-BaseModal .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./UploadBaseModal.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
         }
     ],
     "modules": [],
@@ -541,7 +463,7 @@
                 "name": "appConfig",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/app.config.ts",
+                "file": "src/n/app.config.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
@@ -561,7 +483,7 @@
                 "name": "config",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/app.config.server.ts",
+                "file": "src/n/app.config.server.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -572,16 +494,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
-            },
-            {
-                "name": "Large",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -661,11 +573,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  title: 'Upload File Base Modal',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<UploadBaseModal>",
+                "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: UploadBaseModal,\n  parameters: {\n    layout: 'fullscreen',\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"This component renders a base modal with the added functionality \\\n        of being able to upload file(s) to it. The component consists of the base modal\\\n        accompanied by at least one inner element that prompts the user to upload a file.\\\n        The inner element is a large button that consists of an icon and 2 strings of \\\n        text. The other elements of this components are 2 buttons, one for closing the\\\n        onboarding guide, and another at the bottom that only becomes clickable after the\\\n        user uploads a file. There are 3 possible states: before a user interacts with any\\\n        part of the component, after the user uploads a file, and when the user clicks on\\\n        the x button to close the onboarding guide.\"\n      }\n    }\n  },\n}"
+            },
+            {
+                "name": "PlaceHolder0",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "PlaceHolder1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "preview",
@@ -688,16 +620,6 @@
                 "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
             },
             {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
-            },
-            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -708,20 +630,10 @@
                 "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
             },
             {
-                "name": "Secondary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
-            },
-            {
                 "name": "serverConfig",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/app.config.server.ts",
+                "file": "src/n/app.config.server.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
@@ -732,16 +644,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
-            },
-            {
-                "name": "Small",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -787,8 +689,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonComponent>",
-                "file": "src/stories/Upload File Base Modal/button.stories.ts",
+                "rawtype": "StoryObj<UploadBaseModal>",
+                "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -797,12 +699,12 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "src/app/app.config.ts": [
+            "src/n/app.config.ts": [
                 {
                     "name": "appConfig",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/app.config.ts",
+                    "file": "src/n/app.config.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
@@ -821,12 +723,12 @@
                     "defaultValue": "() => bootstrapApplication(AppComponent, config)"
                 }
             ],
-            "src/app/app.config.server.ts": [
+            "src/n/app.config.server.ts": [
                 {
                     "name": "config",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/app.config.server.ts",
+                    "file": "src/n/app.config.server.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -836,7 +738,7 @@
                     "name": "serverConfig",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/app.config.server.ts",
+                    "file": "src/n/app.config.server.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
@@ -889,58 +791,6 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
-                }
-            ],
-            "src/stories/Upload File Base Modal/button.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  title: 'Upload File Base Modal',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1011,6 +861,38 @@
                     "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
                 }
             ],
+            "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<UploadBaseModal>",
+                    "defaultValue": "{\n  title: 'Upload File Base Modal',\n  tags: ['autodocs'],\n  component: UploadBaseModal,\n  parameters: {\n    layout: 'fullscreen',\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"This component renders a base modal with the added functionality \\\n        of being able to upload file(s) to it. The component consists of the base modal\\\n        accompanied by at least one inner element that prompts the user to upload a file.\\\n        The inner element is a large button that consists of an icon and 2 strings of \\\n        text. The other elements of this components are 2 buttons, one for closing the\\\n        onboarding guide, and another at the bottom that only becomes clickable after the\\\n        user uploads a file. There are 3 possible states: before a user interacts with any\\\n        part of the component, after the user uploads a file, and when the user clicks on\\\n        the x button to close the onboarding guide.\"\n      }\n    }\n  },\n}"
+                },
+                {
+                    "name": "PlaceHolder0",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "PlaceHolder1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                }
+            ],
             ".storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -1066,13 +948,13 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Upload File Base Modal/button.stories.ts": [
+            "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonComponent>",
-                    "file": "src/stories/Upload File Base Modal/button.stories.ts",
+                    "rawtype": "StoryObj<UploadBaseModal>",
+                    "file": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1083,7 +965,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 6,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -1092,45 +974,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "AppComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.config.server.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "config",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.config.server.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "serverConfig",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/app.config.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "appConfig",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1146,26 +989,46 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.component.ts",
+                "filePath": "src/n/app.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "ButtonComponent",
-                "coveragePercent": 83,
-                "coverageCount": "5/6",
-                "status": "very-good"
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.stories.ts",
+                "filePath": "src/n/app.config.server.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Large",
+                "name": "config",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.stories.ts",
+                "filePath": "src/n/app.config.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "serverConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/n/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1175,33 +1038,32 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.stories.ts",
+                "filePath": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "PlaceHolder0",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.stories.ts",
+                "filePath": "src/stories/Upload File Base Modal/UploadBaseModal.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Secondary",
+                "name": "PlaceHolder1",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Upload File Base Modal/button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Small",
+                "filePath": "src/stories/Upload File Base Modal/UploadBaseModal.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UploadBaseModal",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
