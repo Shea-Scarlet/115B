@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 //
-import {SaveContinue} from './SaveContinue';
+import {SaveContinue} from './SaveContinue.component';
 
 const meta: Meta<SaveContinue> = {
   title: 'Save and Continue',

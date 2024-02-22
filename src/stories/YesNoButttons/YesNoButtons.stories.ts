@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { YesNoButtons } from './YesNoButtons';
+import { YesNoButtons } from './YesNoButtons.component';
 
 const meta: Meta<YesNoButtons> = {
   title: 'Yes No Buttons',

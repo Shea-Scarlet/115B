@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { ValidationCheck} from './ValidationCheck';
+import { ValidationCheck} from './ValidationCheck.component';
 
 const meta: Meta<ValidationCheck> = {
   title: 'Validation Check Off',

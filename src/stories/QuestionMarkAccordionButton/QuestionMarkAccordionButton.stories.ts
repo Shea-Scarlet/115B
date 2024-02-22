@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { QuestionMarkAccordionButton } from './QuestionMarkAccordionButton';
+import { QuestionMarkAccordionButton } from './QuestionMarkAccordionButton.component';
 
 const meta: Meta<QuestionMarkAccordionButton> = {
   title: 'QuestionMarkAccordionButton',

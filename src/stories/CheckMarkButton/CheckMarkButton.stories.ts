@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { CheckMarkButton } from './CheckMarkButton';
+import { CheckMarkButton } from './CheckMarkButton.component';
 
 const meta: Meta<CheckMarkButton> = {
   title: 'Check Mark Button',

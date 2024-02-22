@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { within, userEvent, expect } from '@storybook/test';
 
-import { UploadBaseModal } from './UploadBaseModal';
+import { UploadBaseModal } from './UploadBaseModal.component';
 
 const meta: Meta<UploadBaseModal> = {
   title: 'Upload File Base Modal',

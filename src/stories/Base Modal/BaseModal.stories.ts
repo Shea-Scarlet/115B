@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { BaseModal } from './BaseModal';
+import { BaseModal } from './BaseModal.component';
 
 const meta: Meta<BaseModal> = {
   title: 'Base Modal',

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { BodyBox } from './BodyBox';
+import { BodyBox } from './BodyBox.component';
 
 const meta: Meta<BodyBox> = {
   title: 'BodyBox',
