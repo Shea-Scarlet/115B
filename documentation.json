@@ -144,6 +144,64 @@
             "extends": []
         },
         {
+            "name": "BodyBox",
+            "id": "component-BodyBox-57dfae0b8f0b916d9ebf968b8836a98d90543e4ee927c46e9c9c40aa910545950c6abdb2a8805c0b8fb3c7d6179df59188929d0b24540da745572485bb9a22d8",
+            "file": "src/stories/Body Box/BodyBox.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "BodyBox",
+            "styleUrls": [
+                "./BodyBox.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"BodyBox\">\n      <h2>Body Box Component</h2>\n      <p>Body Box implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'BodyBox',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"BodyBox\">\n      <h2>Body Box Component</h2>\n      <p>Body Box implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./BodyBox.css'],\n})\nexport class BodyBox {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./BodyBox.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
             "name": "ButtonComponent",
             "id": "component-ButtonComponent-683379336ffb219f6436bbd1b787cda04501deba0070c9e038bc4291bf272da49711c7bad5294c1613e2ffc014331fe9d615d67def1b9d20484cb47ec1b66003",
             "file": "src/stories/button.component.ts",
@@ -462,6 +520,64 @@
                 {
                     "data": "/* Implementation coming soon */",
                     "styleUrl": "./Card.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "CheckMarkButton",
+            "id": "component-CheckMarkButton-94a17dddc7a463099afcd26951648f3916cf5ea449ffa7e9be200864b32722fd8754e718f3d85c01172030e651f591315cfab9df17917982e4f9c9690e1f23ea",
+            "file": "src/stories/CheckMarkButton/CheckMarkButton.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "CheckMarkButton",
+            "styleUrls": [
+                "./CheckMarkButton.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>Check Mark Button implementation tba</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'CheckMarkButton',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"CheckMarkButton\">\n      <h2>Check Mark Button Component</h2>\n      <p>Check Mark Button implementation tba</p>\n    </section>\n  </article>`,\n  styleUrls: ['./CheckMarkButton.css'],\n})\nexport class CheckMarkButton {\n  user: User | null = null;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./CheckMarkButton.css"
                 }
             ],
             "stylesData": "",
@@ -1046,20 +1162,13 @@
             }
         },
         {
-            "name": "SaveContinue",
-            "id": "component-SaveContinue-4ebba534f191363659a3da55abfb41b554d6c31e74acbee46fc2b3488f5d8fb410ed213bb9e53b240a00c50245511f16e81359eb91227443df2a0571d79d9027",
-            "file": "src/stories/SaveContinue/SaveContinue.ts",
+
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "SaveContinue",
-            "styleUrls": [
-                "./SaveContinue.css"
-            ],
-            "styles": [],
-            "template": "<article>    <section class=\"SaveContinue\">\n      <h2>Save and Continue</h2>\n      <p>Save Continue button implementation tba.</p>\n    </section>\n  </article>",
+
             "templateUrl": [],
             "viewProviders": [],
             "hostDirectives": [],
@@ -1092,12 +1201,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'SaveContinue',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"SaveContinue\">\n      <h2>Save and Continue</h2>\n      <p>Save Continue button implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./SaveContinue.css'],\n})\nexport class SaveContinue {\n  user: User | null = null;\n}",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".SaveContinue {\n    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 48px 20px;\n    margin: 0 auto;\n    max-width: 600px;\n    color: #333;\n  }\n  \n  .SaveContinue h2 {\n    font-weight: 700;\n    font-size: 32px;\n    line-height: 1;\n    margin: 0 0 4px;\n    display: inline-block;\n    vertical-align: top;\n  }\n  \n  .SaveContinue p {\n    margin: 1em 0;\n  }\n  \n  .SaveContinue a {\n    text-decoration: none;\n    color: #1ea7fd;\n  }\n  \n  .SaveContinue ul {\n    padding-left: 30px;\n    margin: 1em 0;\n  }\n  \n  .SaveContinue li {\n    margin-bottom: 8px;\n  }\n  \n  .SaveContinue .tip {\n    display: inline-block;\n    border-radius: 1em;\n    font-size: 11px;\n    line-height: 12px;\n    font-weight: 700;\n    background: #e7fdd8;\n    color: #66bf3c;\n    padding: 4px 12px;\n    margin-right: 10px;\n    vertical-align: top;\n  }\n  \n  .SaveContinue .tip-wrapper {\n    font-size: 13px;\n    line-height: 20px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n  }\n  \n  .SaveContinue .tip-wrapper svg {\n    display: inline-block;\n    height: 12px;\n    width: 12px;\n    margin-right: 4px;\n    vertical-align: top;\n    margin-top: 3px;\n  }\n  \n  .SaveContinue .tip-wrapper svg path {\n    fill: #1ea7fd;\n  }",
-                    "styleUrl": "./SaveContinue.css"
+
                 }
             ],
             "stylesData": "",
@@ -1334,6 +1438,64 @@
             ],
             "stylesData": "",
             "extends": []
+        },
+        {
+            "name": "YesNoExpButton",
+            "id": "component-YesNoExpButton-f9af769254de86e5f527162453d71261edba24c436faab4b5d2cf9a5def24e515c854b6ec50e7fe4068146e5b6ba5ff4678ed232c6f91ca60d3349d75442101d",
+            "file": "src/stories/YesNoButtonExp/YesNoExpButton.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "YesNoExpButton",
+            "styleUrls": [
+                "./YesNoExpButton.css"
+            ],
+            "styles": [],
+            "template": "<article>    <section class=\"YesNoExpButton\">\n      <h2>Yes No Buttons Expansion Component</h2>\n      <p>Yes No Button Expansion implementation tba.</p>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport type { User } from '../user';\n\n@Component({\n  selector: 'YesNoExpButton',\n  standalone: true,\n  imports: [CommonModule],\n  template: `<article>\n    <section class=\"YesNoExpButton\">\n      <h2>Yes No Buttons Expansion Component</h2>\n      <p>Yes No Button Expansion implementation tba.</p>\n    </section>\n  </article>`,\n  styleUrls: ['./YesNoExpButton.css'],\n})\nexport class YesNoExpButton {\n  user: User | null = null;\n}",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".YesNoExpButton {\n    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 48px 20px;\n    margin: 0 auto;\n    max-width: 600px;\n    color: #333;\n  }\n  \n  .YesNoExpButton h2 {\n    font-weight: 700;\n    font-size: 32px;\n    line-height: 1;\n    margin: 0 0 4px;\n    display: inline-block;\n    vertical-align: top;\n  }\n  \n  .YesNoExpButton p {\n    margin: 1em 0;\n  }\n  \n  .YesNoExpButton a {\n    text-decoration: none;\n    color: #1ea7fd;\n  }\n  \n  .YesNoExpButton ul {\n    padding-left: 30px;\n    margin: 1em 0;\n  }\n  \n  .YesNoExpButton li {\n    margin-bottom: 8px;\n  }\n  \n  .YesNoExpButton .tip {\n    display: inline-block;\n    border-radius: 1em;\n    font-size: 11px;\n    line-height: 12px;\n    font-weight: 700;\n    background: #e7fdd8;\n    color: #66bf3c;\n    padding: 4px 12px;\n    margin-right: 10px;\n    vertical-align: top;\n  }\n  \n  .YesNoExpButton .tip-wrapper {\n    font-size: 13px;\n    line-height: 20px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n  }\n  \n  .YesNoExpButton .tip-wrapper svg {\n    display: inline-block;\n    height: 12px;\n    width: 12px;\n    margin-right: 4px;\n    vertical-align: top;\n    margin-top: 3px;\n  }\n  \n  .YesNoExpButton .tip-wrapper svg path {\n    fill: #1ea7fd;\n  }",
+                    "styleUrl": "./YesNoExpButton.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
         }
     ],
     "modules": [],
@@ -1353,7 +1515,7 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -1398,6 +1560,26 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "() => bootstrapApplication(AppComponent, config)"
+            },
+            {
+                "name": "BoxDiv",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Body Box/BodyBox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "Checkmark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "config",
@@ -1513,7 +1695,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<PopUpDialogueButtonComponent>",
@@ -1523,7 +1705,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<PopUpFormButtonComponent>",
@@ -1543,11 +1725,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonsWithLinksComponent>",
-                "defaultValue": "{\n  title: 'Buttons with Links',\n  component: ButtonsWithLinksComponent,\n  tags: ['autodocs'],\n  parameters: {\n    docs:{\n      description:{\n        // Add component description here:\n        component: \"The buttons with links allow the users to navigate to online forms and resources\"\n      }\n    }\n  },\n  render: (args: ButtonsWithLinksComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "type": "Meta<CheckMarkButton>",
+                "defaultValue": "{\n  title: 'Check Mark Button',\n  component: CheckMarkButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Checkmark Button is used in the base modal. It appears when the user meets a certain\\\n          specifications. It should also be able to be manually checked off as a button. (we\\'re not\\\n          sure yet)',\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1563,11 +1745,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<SaveContinue>",
-                "defaultValue": "{\n  title: 'Save and Continue',\n  component: SaveContinue,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Save and Continue button will allow the user to save\\\n          any to all information that they have filled out in the\\\n          forms',\n      },\n    },\n  },\n}"
+
             },
             {
                 "name": "meta",
@@ -1603,6 +1781,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+
                 "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1750,6 +1929,16 @@
                 "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
             },
             {
+                "name": "QuestionMarkAccordion",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1830,8 +2019,7 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PopUpDialogueButtonComponent>",
-                "file": "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1841,8 +2029,7 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PopUpFormButtonComponent>",
-                "file": "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1863,8 +2050,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                "rawtype": "StoryObj<CheckMarkButton>",
+                "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1885,8 +2072,7 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<SaveContinue>",
-                "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1929,6 +2115,7 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+
                 "rawtype": "StoryObj<YesNoButtons>",
                 "file": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "deprecated": false,
@@ -1951,12 +2138,12 @@
                     "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration()],\n}"
                 }
             ],
-            "src/stories/SaveContinue/SaveContinue.stories.ts": [
+
                 {
                     "name": "Base",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1966,19 +2153,12 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<SaveContinue>",
-                    "defaultValue": "{\n  title: 'Save and Continue',\n  component: SaveContinue,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Save and Continue button will allow the user to save\\\n          any to all information that they have filled out in the\\\n          forms',\n      },\n    },\n  },\n}"
-                }
-            ],
-            "src/stories/ValidationCheck/ValidationCheck.stories.ts": [
+
                 {
                     "name": "Base",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
+
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1988,11 +2168,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/ValidationCheck/ValidationCheck.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<ValidationCheck>",
-                    "defaultValue": "{\n  title: 'Validation Check Off',\n  component: ValidationCheck,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Validation Check Off will be used to have the user verify that\\\n          they have correctly inputted the information before they continue to\\\n          the next page.',\n      },\n    },\n  },\n}"
+
                 }
             ],
             "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
@@ -2049,6 +2225,50 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "() => bootstrapApplication(AppComponent, config)"
+                }
+            ],
+            "src/stories/Body Box/BodyBox.stories.ts": [
+                {
+                    "name": "BoxDiv",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Body Box/BodyBox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Body Box/BodyBox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<BodyBox>",
+                    "defaultValue": "{\n  title: 'BodyBox',\n  component: BodyBox,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'BodyBox have the ability to contain any component and description elements allowing it to create\\\n          responsive layouts with ease. By default, it should render \\'div\\' element. Provides a shorthand way\\\n          to pass styles via props.'\n      },\n    },\n  },\n}"
+                }
+            ],
+            "src/stories/CheckMarkButton/CheckMarkButton.stories.ts": [
+                {
+                    "name": "Checkmark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<CheckMarkButton>",
+                    "defaultValue": "{\n  title: 'Check Mark Button',\n  component: CheckMarkButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Checkmark Button is used in the base modal. It appears when the user meets a certain\\\n          specifications. It should also be able to be manually checked off as a button. (we\\'re not\\\n          sure yet)',\n      },\n    },\n  },\n}"
                 }
             ],
             "src/app/app.config.server.ts": [
@@ -2339,6 +2559,28 @@
                     "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
                 }
             ],
+            "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<QuestionMarkAccordionButton>",
+                    "defaultValue": "{\n  title: 'QuestionMarkAccordionButton',\n  component: QuestionMarkAccordionButton,\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'fullscreen',\n    docs: {\n      description: {\n        // Add component description here:\n        component:\n          'The Question Mark Accordion Button is used to display helper messages, allowing it to\\\n          guide the users.',\n      },\n    },\n  },\n}"
+                },
+                {
+                    "name": "QuestionMarkAccordion",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/QuestionMarkAccordionButton/QuestionMarkAccordionButton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                }
+            ],
             "src/stories/Tab Drawer/TabDrawer.stories.ts": [
                 {
                     "name": "meta",
@@ -2471,7 +2713,7 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Button That Create PopUp Dialogue/PopUpDialogueButton.stories.ts": [
+
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
@@ -2484,7 +2726,7 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Button That Creates PopUp Form/PopUpFormButton.stories.ts": [
+
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
@@ -2510,13 +2752,13 @@
                     "kind": 183
                 }
             ],
-            "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts": [
+            "src/stories/CheckMarkButton/CheckMarkButton.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonsWithLinksComponent>",
-                    "file": "src/stories/Buttons with Links/ButtonsWithLinks.stories.ts",
+                    "rawtype": "StoryObj<CheckMarkButton>",
+                    "file": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2536,13 +2778,12 @@
                     "kind": 183
                 }
             ],
-            "src/stories/SaveContinue/SaveContinue.stories.ts": [
+
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<SaveContinue>",
-                    "file": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -2588,6 +2829,7 @@
                     "kind": 183
                 }
             ],
+
             "src/stories/YesNoButttons/YesNoButtons.stories.ts": [
                 {
                     "name": "Story",
@@ -2692,6 +2934,35 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "BaseModal",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BoxDiv",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Body Box/BodyBox.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BodyBox",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -2843,6 +3114,35 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Checkmark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/CheckMarkButton/CheckMarkButton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/CheckMarkButton/CheckMarkButton.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CheckMarkButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/Previous and Next Buttons/PrevNextButton.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2882,7 +3182,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2892,7 +3192,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/SaveContinue/SaveContinue.stories.ts",
+
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2902,10 +3202,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/SaveContinue/SaveContinue.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "SaveContinue",
+
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
@@ -3018,6 +3315,7 @@
                 "status": "low"
             },
             {
+
                 "filePath": "src/stories/YesNoButttons/YesNoButtons.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
