@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # storybook documentation
-.documentation.json
+documentation.json
