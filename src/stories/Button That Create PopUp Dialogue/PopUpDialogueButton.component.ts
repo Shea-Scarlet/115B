@@ -6,55 +6,40 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'PopUpDialogue-Button',
   standalone: true,
   imports: [CommonModule],
-  template: ` <button
-    type="button"
-    (click)="onClick.emit($event)"
-    [ngClass]="classes"
-    [ngStyle]="{ 'background-color': backgroundColor }"
-  >
-    {{ label }}
-  </button>`,
+  template: ` 
+    <div [ngClass]="{'OuterDiv': true}">
+      <div [ngClass]="{'DialogueBox': true}" *ngIf="dialogueVisible">
+        {{ DialogueText }}
+      </div>
+      <div [ngClass]="{'QuestionMarkButtonOuterDiv': true}">
+        <button
+          type="button"
+          (click)="toggleDialogue()"
+          [ngClass]="{'QuestionMarkButton': true}"
+          > ?
+        </button>
+      </div>
+    <div>`,
   styleUrls: ['./PopUpDialogueButton.css'],
 })
 export class PopUpDialogueButtonComponent {
   /**
-   * Is this the principal call to action on the page?
-   */
-  @Input()
-  primary = false;
-
-  /**
-   * What background color to use
-   */
-  @Input()
-  backgroundColor?: string;
-
-  /**
-   * How large should the button be?
-   */
-  @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
-
-  /**
-   * Button contents
+   * Contents of Dialogue Box
    *
    * @required
    */
   @Input()
-  label = 'Button';
+  DialogueText = "Dialogue Text Here"
+  @Output() onClick = new EventEmitter<Event>();
 
   /**
-   * Optional click handler
+   * By default, pop up dialogue box is hidden
    */
-  @Output()
-  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
-  onClick = new EventEmitter<Event>();
-
-  public get classes(): string[] {
-    const mode = this.primary
-      ? 'PopUpDialogue-Button--primary'
-      : 'PopUpDialogue-Button--secondary';
-
-    return ['PopUpDialogue-Button', `PopUpDialogue-Button--${this.size}`, mode];
+  dialogueVisible = true;
+  toggleDialogue() {
+    this.dialogueVisible = !this.dialogueVisible; // Toggle visibility
+    if (this.dialogueVisible) {
+      this.onClick.emit(); // Emit event when the dialogue becomes visible
+    }
   }
 }

@@ -10,36 +10,30 @@ const meta: Meta<PopUpDialogueButtonComponent> = {
   parameters: {
     docs:{
       description:{
-        // Add component description here:
-        component: "The Pop Up Dialogue button renders a pop up dialogue window when clicked."
+        component: "The Pop Up Dialogue button renders a pop up\
+         dialogue window when clicked."
       }
     }
   },
   render: (args: PopUpDialogueButtonComponent) => ({
     props: {
-      backgroundColor: null,
       ...args,
     },
   }),
-  argTypes: {
-    backgroundColor: {
-      control: 'color',
-    },
-  },
-};
+  argTypes: {},
+}
 
 export default meta;
 type Story = StoryObj<PopUpDialogueButtonComponent>;
 
 export const PlaceHolder2: Story = {
   args: {
-    label: '?',
+    DialogueText: '?',
   },
 };
 
 export const PlaceHolder3: Story = {
   args: { 
-    size: 'large',
-    label: '?',
+    DialogueText: '?',
   },
 };
