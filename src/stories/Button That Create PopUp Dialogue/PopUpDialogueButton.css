@@ -1,30 +1,57 @@
-.PopUpDialogue-Button {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.QuestionMarkButton {
+  font-family: "Rubiks, sans-serif";
   font-weight: 700;
-  border: 0;
-  border-radius: 3em;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  border: 3px solid;
+  border-radius: 50%;
   cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 }
-.PopUpDialogue-Button--primary {
-  color: white;
-  background-color: #1ea7fd;
+
+.QuestionMarkButtonOuterDiv{
+  border: 0px solid;
+  height: 25px;
+  width: 25px;
+  align-items: flex-end;
+  padding-top: 5px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
-.PopUpDialogue-Button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.OuterDiv{
+  width: 200px;
+  height: 160px;
+  border: 0px solid;
+  position: relative;
 }
-.PopUpDialogue-Button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.OuterDialogueBox{
+  border: 1px solid;
 }
-.PopUpDialogue-Button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.PopUpDialogue-Button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.DialogueBox {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scrollbar-width: thin;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 1px;
+  width: 175px;
+  height: 114px;
+  background-color: #d7dadd;
+  font-family: "Rubiks, sans-serif";
+  font-weight: 200;
+  font-size: 10px;
+  color: #35393d;
+  scrollbar-width: none;
+  scrollbar-color: #888 #f1f1f1;
+  position: relative;
+  top: 0; 
 }
