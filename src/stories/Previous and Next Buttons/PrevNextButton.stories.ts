@@ -18,8 +18,14 @@ const meta: Meta<PrevNextButtonComponent> = {
     props: {
       ...args,
       backgroundColor: null,
-      onPrevClick: action('Previous button clicked'),
-      onNextClick: action('Next button clicked'),
+      onPrevClick: () => {
+        args.value--;
+        action('Previous button clicked')(args.value);
+      },
+      onNextClick: () => {
+        args.value++;
+        action('Next button clicked')(args.value);
+      },
     },
   }),
   argTypes: {
@@ -28,6 +34,9 @@ const meta: Meta<PrevNextButtonComponent> = {
     },
     size: {
       control: { type: 'select', options: ['small', 'medium', 'large'] },
+    },
+    value: {
+      control: { type: 'number' },
     },
   },
 };
@@ -38,17 +47,20 @@ type Story = StoryObj<PrevNextButtonComponent>;
 export const Medium: Story = {
   args: {
     size: 'medium',
+    value: 0,
   },
 };
 
 export const Small: Story = {
   args: {
     size: 'small',
+    value: 0,
   },
 };
 
 export const Large: Story = {
   args: {
     size: 'large',
+    value: 0,
   },
 };
