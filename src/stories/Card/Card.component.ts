@@ -8,22 +8,18 @@ import { MatCardModule } from '@angular/material/card';
   template: `
   <mat-card class = "outter-card">
     <div class = "card-content-container">
-      <div class = "photo-option">
+      <div class = "card-image">
       <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="Image of a Shiba Inu">
       </div>
-      <div class = "text-options">
-        <div class = "title-option">
-        Welcome to example!
-        </div>
-        <div class = "explanation-option">
-        Im explaining the process of explaining! Woah, isnt that great!
-        </div>
+      <div class = "card-text">
+        <mat-card-title class = "title-option">Welcome to example!</mat-card-title>
+        <mat-card-subtitle class = "explanation-option">I'm explaining the process of explaining! Woah, isn't that great!</mat-card-subtitle>
       </div>
       <div class = "data-field-1">
-        pi = 89; 10 /= 31%
+        Bagels Collected: 12,540
       </div>
       <div class = "data-field-2">
-        23/9 % 09 + m, i / 2
+        Bread Sliced: 180,000
       </div>
       <div class = "checkbox-field">
         check?

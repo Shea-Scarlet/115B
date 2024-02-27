@@ -3,23 +3,24 @@
   display: flex; 
   flex-direction: row; 
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   gap: 50px;
 }
 
 /* Individual sections */
-.photo-option {
+.card-image {
   margin: auto;
   order: 1;
   flex: auto;
+  border-radius: 15px;
 
 }
 
 .title-option {
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 .explanation-option {
@@ -46,17 +47,20 @@
   flex: auto;
 }
 
-.text-options {
+.card-text {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   order: 2;
   margin: auto;
   flex: auto;
-
-
 }
 
 .outter-card {
   margin: 20px;
+}
+
+.outter-card:hover {
+  cursor: pointer;    /* Indicate clickability */
+  opacity: 0.8;      /* Slightly dim for feedback */
 }
