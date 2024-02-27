@@ -6,15 +6,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'PrevNext-Button',
   template: `
     <button
+      *ngIf="value > 0"
       type="button"
-      (click)="onPrevClick.emit()"
+      (click)="prevClicked()"
       [class]="prevButtonClasses"
     >
       Previous
     </button>
     <button
       type="button"
-      (click)="onNextClick.emit()"
+      (click)="nextClicked()"
       [class]="nextButtonClasses"
     >
       Next
@@ -32,13 +33,28 @@ export class PrevNextButtonComponent {
   @Input()
   size: 'small' | 'medium' | 'large' = 'medium';
 
-  @Output()
-  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
-  onPrevClick = new EventEmitter<void>();
+  @Input()
+  value = 0;
 
   @Output()
   // eslint-disable-next-line @angular-eslint/no-output-on-prefix
-  onNextClick = new EventEmitter<void>();
+  onPrevClick = new EventEmitter<number>();
+
+  @Output()
+  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
+  onNextClick = new EventEmitter<number>();
+
+  prevClicked() {
+    if (this.value > 0) {
+      this.value--;
+      this.onPrevClick.emit(this.value);
+    }
+  }
+
+  nextClicked() {
+    this.value++;
+    this.onNextClick.emit(this.value);
+  }
 
   public get prevButtonClasses(): string {
     const mode = this.primary
