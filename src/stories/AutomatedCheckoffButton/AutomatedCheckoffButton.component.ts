@@ -4,17 +4,17 @@ import { CommonModule } from '@angular/common';
 import type { User } from '../user';
 
 @Component({
-  selector: 'ValidationCheck',
+  selector: 'AutomatedCheckoffButton',
   standalone: true,
   imports: [CommonModule],
   template: `<article>
-    <section class="ValidationCheck">
+    <section class="AutomatedCheckoffButton">
       <h2>Validation Check Off</h2>
       <p>Validation Check implementation tba.</p>
     </section>
   </article>`,
-  styleUrls: ['./ValidationCheck.css'],
+  styleUrls: ['./AutomatedCheckoffButton.css'],
 })
-export class ValidationCheck {
+export class AutomatedCheckoffButtonComponent {
   user: User | null = null;
 }
