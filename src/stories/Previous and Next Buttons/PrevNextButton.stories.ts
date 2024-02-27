@@ -41,6 +41,12 @@ export const Medium: Story = {
   },
 };
 
+export const Small: Story = {
+  args: {
+    size: 'small',
+  },
+};
+
 export const Large: Story = {
   args: {
     size: 'large',
