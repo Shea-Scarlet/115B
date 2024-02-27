@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { Meta, StoryObj } from '@storybook/angular';
 
-import { TabDrawer } from './TabDrawer.component';
+import { TabDrawerComponent } from '../../app/tab-drawer/tab-drawer.component';
 
-const meta: Meta<TabDrawer> = {
+const meta: Meta<TabDrawerComponent> = {
   title: 'Tab Drawer',
   tags: ['autodocs'],
-  component: TabDrawer,
+  component: TabDrawerComponent,
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -21,7 +21,13 @@ const meta: Meta<TabDrawer> = {
 };
 
 export default meta;
-type Story = StoryObj<TabDrawer>;
+type Story = StoryObj<TabDrawerComponent>;
+
+export const Default: Story = {
+  args: {
+    pageTitle: "Example Title"
+  }
+}
 
 export const PlaceHolder4: Story = {};
 
