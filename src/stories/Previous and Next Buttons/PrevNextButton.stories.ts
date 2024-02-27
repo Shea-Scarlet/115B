@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from '@storybook/angular';
 
 import { PrevNextButtonComponent } from './PrevNextButton.component';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<PrevNextButtonComponent> = {
   title: 'Previous and Next Buttons',
   component: PrevNextButtonComponent,
@@ -10,9 +9,7 @@ const meta: Meta<PrevNextButtonComponent> = {
   parameters: {
     docs:{
       description:{
-        // Add component description here:
-        component: "The Previous and Next buttons add aditional control to how the user\
-        navigates from one tab to the next."
+        component: "The Previous and Next buttons add additional control to how the user navigates from one tab to the next."
       }
     }
   },
@@ -26,21 +23,29 @@ const meta: Meta<PrevNextButtonComponent> = {
     backgroundColor: {
       control: 'color',
     },
+    size: { // Add this
+      control: { type: 'select', options: ['small', 'medium', 'large'] },
+    },
   },
 };
 
 export default meta;
 type Story = StoryObj<PrevNextButtonComponent>;
 
-export const PlaceHolder0: Story = {
+export const Medium: Story = { // Rename this
   args: {
-    label: 'Button',
+    size: 'medium',
   },
 };
 
-export const PlaceHolder1: Story = {
+export const Small: Story = { // Rename this
+  args: {
+    size: 'small',
+  },
+};
+
+export const Large: Story = { // And this
   args: {
     size: 'large',
-    label: 'Button',
   },
 };
