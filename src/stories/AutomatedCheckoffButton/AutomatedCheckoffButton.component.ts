@@ -9,8 +9,8 @@ import type { User } from '../user';
   imports: [CommonModule],
   template: `<article>
     <section class="AutomatedCheckoffButton">
-      <h2>Validation Check Off</h2>
-      <p>Validation Check implementation tba.</p>
+      <h2>AutomatedCheckoffButton Off</h2>
+      <p>AutomatedCheckoffButton implementation tba.</p>
     </section>
   </article>`,
   styleUrls: ['./AutomatedCheckoffButton.css'],
