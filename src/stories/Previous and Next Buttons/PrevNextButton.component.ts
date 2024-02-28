@@ -14,6 +14,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
       Previous
     </button>
     <button
+      *ngIf="value < maxValue"
       type="button"
       (click)="nextClicked()"
       [class]="nextButtonClasses"
@@ -36,6 +37,9 @@ export class PrevNextButtonComponent {
   @Input()
   value = 0;
 
+  @Input()
+  maxValue = 10;
+
   @Output()
   // eslint-disable-next-line @angular-eslint/no-output-on-prefix
   onPrevClick = new EventEmitter<number>();
@@ -52,8 +56,10 @@ export class PrevNextButtonComponent {
   }
 
   nextClicked() {
-    this.value++;
-    this.onNextClick.emit(this.value);
+    if (this.value < this.maxValue) {
+      this.value++;
+      this.onNextClick.emit(this.value);
+    }
   }
 
   public get prevButtonClasses(): string {
