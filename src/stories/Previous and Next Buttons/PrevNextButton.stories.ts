@@ -38,6 +38,9 @@ const meta: Meta<PrevNextButtonComponent> = {
     value: {
       control: { type: 'number' },
     },
+    maxValue: {
+      control: { type: 'number' },
+    },
   },
 };
 
@@ -48,6 +51,7 @@ export const Medium: Story = {
   args: {
     size: 'medium',
     value: 0,
+    maxValue: 10,
   },
 };
 
@@ -55,6 +59,7 @@ export const Small: Story = {
   args: {
     size: 'small',
     value: 0,
+    maxValue: 10,
   },
 };
 
@@ -62,5 +67,6 @@ export const Large: Story = {
   args: {
     size: 'large',
     value: 0,
+    maxValue: 10,
   },
 };
