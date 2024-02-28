@@ -6,6 +6,10 @@ const meta: Meta<CardComponent> = {
   title: 'Card',
   component: CardComponent,
   tags: ['autodocs'],
+  argTypes: {
+    title: { control: 'text' },
+    explanation: { control: 'text' }
+  },
   parameters: {
     layout: 'fullscreen',
     docs: {
@@ -24,4 +28,9 @@ export default meta;
 type Story = StoryObj<CardComponent>;
 
 // Exports story to storybook render
-export const BaseCard: Story = {};
+export const BaseCard: Story = {
+  args: {
+    title: 'Default Title!',
+    explanation: "I've explained this well!"
+  },
+};

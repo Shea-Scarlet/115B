@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
@@ -12,8 +12,8 @@ import { MatCardModule } from '@angular/material/card';
       <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="Image of a Shiba Inu">
       </div>
       <div class = "card-text">
-        <mat-card-title class = "title-option">Welcome to example!</mat-card-title>
-        <mat-card-subtitle class = "explanation-option">I'm explaining the process of explaining! Woah, isn't that great!</mat-card-subtitle>
+        <mat-card-title class = "title-option">{{ title }}</mat-card-title>
+        <mat-card-subtitle class = "explanation-option">{{ explanation }}</mat-card-subtitle>
       </div>
       <div class = "data-field-1">
         Bagels Collected: 12,540
@@ -30,4 +30,6 @@ import { MatCardModule } from '@angular/material/card';
   styleUrls: ['./Card.css'],
 })
 export class CardComponent {
+  @Input() title?: string;
+  @Input() explanation?: string;
 }

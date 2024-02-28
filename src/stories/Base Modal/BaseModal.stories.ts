@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { BaseModal } from './BaseModal.component';
+import { BaseModalComponent } from './BaseModal.component';
 
-const meta: Meta<BaseModal> = {
+const meta: Meta<BaseModalComponent> = {
   title: 'Base Modal',
-  component: BaseModal,
+  component: BaseModalComponent,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
@@ -23,7 +23,8 @@ const meta: Meta<BaseModal> = {
 };
 
 export default meta;
-type Story = StoryObj<BaseModal>;
+type Story = StoryObj<BaseModalComponent>;
 
 // Exports story to storybook render
-export const initialModal: Story = {};
+export const initialModal: Story = {
+};
