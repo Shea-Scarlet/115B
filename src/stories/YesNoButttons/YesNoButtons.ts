@@ -1,20 +1,33 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+// YesNoButtons.component.ts
 
-import type { User } from '../user';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'YesNoButtons',
-  standalone: true,
-  imports: [CommonModule],
-  template: `<article>
-    <section class="YesNoButtons">
-      <h2>Yes No Buttons Component</h2>
-      <p>Yes No Button implementation tba.</p>
-    </section>
-  </article>`,
+  template: `
+    <button type="button" (click)="yesClicked()" [class]="yesButtonClasses">Yes</button>
+    <button type="button" (click)="noClicked()" [class]="noButtonClasses">No</button>
+  `,
   styleUrls: ['./YesNoButtons.css'],
 })
 export class YesNoButtons {
-  user: User | null = null;
+  isYesSelected: boolean | null = null;
+
+  get yesButtonClasses(): string {
+    return this.isYesSelected === true ? 'selected yes' : 'yes';
+  }
+
+  get noButtonClasses(): string {
+    return this.isYesSelected === false ? 'selected no' : 'no';
+  }
+
+  yesClicked(): void {
+    this.isYesSelected = true;
+    // Perform additional actions if needed
+  }
+
+  noClicked(): void {
+    this.isYesSelected = false;
+    // Perform additional actions if needed
+  }
 }
