@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     <div class = "modal-header">
       Im the header!
     </div>
-    <div class = "modeal-body">
+    <div class = "modal-body">
       Im the body!
     </div>
     <div class = "modal-footer">
