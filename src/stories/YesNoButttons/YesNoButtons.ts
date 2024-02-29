@@ -71,3 +71,4 @@ export class YesNoButtons {
     this.onClick.emit(value);
   }
 }
+///
