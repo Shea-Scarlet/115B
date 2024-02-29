@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 //
-import {SaveContinue} from './SaveContinue.component';
+import {SaveContinueComponent} from './SaveContinue.component';
 
-const meta: Meta<SaveContinue> = {
+const meta: Meta<SaveContinueComponent> = {
   title: 'Save and Continue',
-  component: SaveContinue,
+  component: SaveContinueComponent,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
@@ -21,7 +21,7 @@ const meta: Meta<SaveContinue> = {
 };
 
 export default meta;
-type Story = StoryObj<SaveContinue>;
+type Story = StoryObj<SaveContinueComponent>;
 
 // Exports story to storybook render
 export const Base: Story = {};

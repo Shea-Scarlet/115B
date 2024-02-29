@@ -46,6 +46,7 @@ export class PrevNextButtonComponent {
    * Optional click handler
    */
   @Output()
+  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
