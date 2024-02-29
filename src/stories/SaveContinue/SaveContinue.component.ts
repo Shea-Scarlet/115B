@@ -15,6 +15,6 @@ import type { User } from '../user';
   </article>`,
   styleUrls: ['./SaveContinue.css'],
 })
-export class SaveContinue {
+export class SaveContinueComponent {
   user: User | null = null;
 }
