@@ -11,7 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 <button
     *ngIf="!popUpForm"
     type="button"
-    (click)="onButtonClick()"
+    (click)="toggleModal()"
     [ngClass]="classes"
     >
     {{ label }}
@@ -46,11 +46,7 @@ import {MatCardModule} from '@angular/material/card';
   styleUrls: ['./PopUpFormButton.css'],
 })
 export class PopUpFormButtonComponent {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  @Input()
-  primary = false;
+ 
 
   /**
    * What background color to use
@@ -79,7 +75,7 @@ export class PopUpFormButtonComponent {
   onClick = new EventEmitter<Event>();
 
   popUpForm = false;
-  onButtonClick() {
+  toggleModal() {
     this.popUpForm = true;
     if (this.popUpForm){
       this.onClick.emit();
@@ -87,11 +83,8 @@ export class PopUpFormButtonComponent {
   }
 
   public get classes(): string[] {
-    const mode = this.primary
-      ? 'PopUpForm-Button--primary'
-      : 'PopUpForm-Button--secondary';
 
-    return ['PopUpForm-Button', `PopUpForm-Button--${this.size}`, mode];
+    return ['PopUpForm-Button', `PopUpForm-Button--${this.size}`,];
   }
 }
 
