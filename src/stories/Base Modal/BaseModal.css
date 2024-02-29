@@ -1,19 +1,22 @@
 .modal-base {
-    
     max-width: 800px;
-    min-height: 600px;
+    max-height: 600px;
     margin: 20px auto; /* Center the frame */
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
   
   .modal-header {
+    display: flex;
+    flex-direction: column;
     background-color: lavender;
-    min-height: 200px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding: 20px;
     box-sizing: border-box;
+    padding: 20px;
+    flex: 1 1 auto;
   } 
   
   .modal-body {
@@ -21,14 +24,36 @@
     min-height: 300px;
     padding: 20px;
     box-sizing: border-box;
+    flex: 1 1 auto;
   }
   
   .modal-footer {
+    flex: 0 1 auto;
     background-color: pink;
-    min-height: 100px;
+    min-height: 50px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
   }
+
+  .tab-drawer {
+    flex: 0 1 auto;
+    padding: 20px;
+  }
+
+  .page-label-text {
+    margin-bottom: auto;
+    font-size: smaller;
+  }
+
+  .header-text {
+    margin-bottom: auto;
+  }
+
+  .subtitle-text {
+    margin-bottom: auto;
+  }
+
+
   
