@@ -1,5 +1,4 @@
-import { Meta, StoryObj } from '@storybook/angular';
-
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { TabDrawerComponent } from './tab-drawer.component';
 
 const meta: Meta<TabDrawerComponent> = {
@@ -18,7 +17,7 @@ const meta: Meta<TabDrawerComponent> = {
       },
     },
   },
-};
+} as Meta;
 
 export default meta;
 type Story = StoryObj<TabDrawerComponent>;
@@ -28,7 +27,3 @@ export const Default: Story = {
     pageTitle: "Example Title"
   }
 }
-
-export const PlaceHolder4: Story = {};
-
-export const PlaceHolder5: Story = {};
