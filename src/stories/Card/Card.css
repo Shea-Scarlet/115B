@@ -1,1 +1,66 @@
-/* Implementation coming soon */
+/* Overall card container */
+.card-content-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 50px;
+}
+
+/* Individual sections */
+.card-image {
+  margin: auto;
+  order: 1;
+  flex: auto;
+  border-radius: 15px;
+
+}
+
+.title-option {
+  font-size: 15pt;
+}
+
+.explanation-option {
+  font-size: 10pt;
+}
+
+.data-field-1 {
+  margin: auto;
+  order: 3;
+  flex: auto;
+
+}
+
+.data-field-2 {
+  margin: auto;
+  order: 4;
+  flex: auto;
+
+}
+
+.checkbox-field {  
+  margin: auto;
+  order: 5;
+  flex: auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  order: 2;
+  margin: auto;
+  flex: auto;
+}
+
+.outter-card {
+  margin: 20px;
+}
+
+.outter-card:hover {
+  cursor: pointer;    /* Indicate clickability */
+  opacity: 0.8;      /* Slightly dim for feedback */
+}

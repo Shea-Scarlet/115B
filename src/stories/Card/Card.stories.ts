@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { Card } from './Card.component';
+import { CardComponent } from './Card.component';
 
-const meta: Meta<Card> = {
+const meta: Meta<CardComponent> = {
   title: 'Card',
-  component: Card,
+  component: CardComponent,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
@@ -21,7 +21,7 @@ const meta: Meta<Card> = {
 };
 
 export default meta;
-type Story = StoryObj<Card>;
+type Story = StoryObj<CardComponent>;
 
 // Exports story to storybook render
 export const BaseCard: Story = {};

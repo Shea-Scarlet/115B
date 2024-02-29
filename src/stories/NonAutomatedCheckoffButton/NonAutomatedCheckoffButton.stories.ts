@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { ValidationCheck} from './ValidationCheck.component';
+import { NonAutomatedCheckoffButtonComponent } from './NonAutomatedCheckoffButton.component';
 
-const meta: Meta<ValidationCheck> = {
-  title: 'Validation Check Off',
-  component: ValidationCheck,
+const meta: Meta<NonAutomatedCheckoffButtonComponent> = {
+  title: 'NonAutomatedCheckoffButton',
+  component: NonAutomatedCheckoffButtonComponent,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
@@ -12,7 +12,7 @@ const meta: Meta<ValidationCheck> = {
       description: {
         // Add component description here:
         component:
-          'The Validation Check Off will be used to have the user verify that\
+          'The NonAutomatedCheckoffButton will be used to have the user verify that\
           they have correctly inputted the information before they continue to\
           the next page.',
       },
@@ -21,7 +21,7 @@ const meta: Meta<ValidationCheck> = {
 };
 
 export default meta;
-type Story = StoryObj<ValidationCheck>;
+type Story = StoryObj<NonAutomatedCheckoffButtonComponent>;
 
 // Exports story to storybook render
 export const Base: Story = {};

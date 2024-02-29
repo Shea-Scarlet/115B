@@ -1,4 +1,4 @@
-.ValidationCheck {
+.AutomatedCheckoffButton {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -8,7 +8,7 @@
     color: #333;
   }
   
-  .ValidationCheck h2 {
+  .AutomatedCheckoffButton h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 1;
@@ -17,25 +17,25 @@
     vertical-align: top;
   }
   
-  .ValidationCheck p {
+  .AutomatedCheckoffButton p {
     margin: 1em 0;
   }
   
-  .ValidationCheck a {
+  .AutomatedCheckoffButton a {
     text-decoration: none;
     color: #1ea7fd;
   }
   
-  .ValidationCheck ul {
+  .AutomatedCheckoffButton ul {
     padding-left: 30px;
     margin: 1em 0;
   }
   
-  .ValidationCheck li {
+  .AutomatedCheckoffButton li {
     margin-bottom: 8px;
   }
   
-  .ValidationCheck .tip {
+  .AutomatedCheckoffButton .tip {
     display: inline-block;
     border-radius: 1em;
     font-size: 11px;
@@ -48,14 +48,14 @@
     vertical-align: top;
   }
   
-  .ValidationCheck .tip-wrapper {
+  .AutomatedCheckoffButton .tip-wrapper {
     font-size: 13px;
     line-height: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
   
-  .ValidationCheck .tip-wrapper svg {
+  .AutomatedCheckoffButton .tip-wrapper svg {
     display: inline-block;
     height: 12px;
     width: 12px;
@@ -64,6 +64,6 @@
     margin-top: 3px;
   }
   
-  .ValidationCheck .tip-wrapper svg path {
+  .AutomatedCheckoffButton .tip-wrapper svg path {
     fill: #1ea7fd;
   }

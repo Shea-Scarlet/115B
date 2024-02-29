@@ -6,24 +6,35 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  transition: transform 0.1s ease-in-out;
 }
-.PrevNext-Button--primary {
-  color: white;
-  background-color: #1ea7fd;
+
+.PrevNext-Button:active {
+  transform: scale(0.95);
 }
-.PrevNext-Button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+/* Styles for the Previous button */
+.PrevNext-Button.PrevNext-Button--previous {
+  color: #000; /* black text */
+  background-color: #fff; /* white background */
 }
+
+/* Styles for the Next button */
+.PrevNext-Button.PrevNext-Button--next {
+  color: #fff; /* white text */
+  background-color: #0072CD; /* blue background */
+}
+
 .PrevNext-Button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
+
 .PrevNext-Button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
+
 .PrevNext-Button--large {
   font-size: 16px;
   padding: 12px 24px;
