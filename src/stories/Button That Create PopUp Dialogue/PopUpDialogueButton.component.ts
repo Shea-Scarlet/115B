@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -35,7 +37,7 @@ export class PopUpDialogueButtonComponent {
   /**
    * By default, pop up dialogue box is hidden
    */
-  dialogueVisible = true;
+  dialogueVisible = false;
   toggleDialogue() {
     this.dialogueVisible = !this.dialogueVisible; // Toggle visibility
     if (this.dialogueVisible) {
