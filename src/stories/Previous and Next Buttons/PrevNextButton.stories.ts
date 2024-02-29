@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/angular';
+import { action } from '@storybook/addon-actions';
 
 import { PrevNextButtonComponent } from './PrevNextButton.component';
 
@@ -15,16 +16,30 @@ const meta: Meta<PrevNextButtonComponent> = {
   },
   render: (args: PrevNextButtonComponent) => ({
     props: {
-      backgroundColor: null,
       ...args,
+      backgroundColor: null,
+      onPrevClick: () => {
+        args.value--;
+        action('Previous button clicked')(args.value);
+      },
+      onNextClick: () => {
+        args.value++;
+        action('Next button clicked')(args.value);
+      },
     },
   }),
   argTypes: {
     backgroundColor: {
       control: 'color',
     },
-    size: { // Add this
+    size: {
       control: { type: 'select', options: ['small', 'medium', 'large'] },
+    },
+    value: {
+      control: { type: 'number' },
+    },
+    maxValue: {
+      control: { type: 'number' },
     },
   },
 };
@@ -32,20 +47,26 @@ const meta: Meta<PrevNextButtonComponent> = {
 export default meta;
 type Story = StoryObj<PrevNextButtonComponent>;
 
-export const Medium: Story = { // Rename this
+export const Medium: Story = {
   args: {
     size: 'medium',
+    value: 0,
+    maxValue: 10,
   },
 };
 
-export const Small: Story = { // Rename this
+export const Small: Story = {
   args: {
     size: 'small',
+    value: 0,
+    maxValue: 10,
   },
 };
 
-export const Large: Story = { // And this
+export const Large: Story = {
   args: {
     size: 'large',
+    value: 0,
+    maxValue: 10,
   },
 };
