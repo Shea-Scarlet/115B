@@ -13,8 +13,8 @@ import { CommonModule } from '@angular/common';
       <h1 class = 'header-text'>Welcome Starbucks!</h1>
       <p class = 'subtitle-text'> You're so awesome and you deserve at least two cookies.</p>
     </div>
-    <div class = 'tab-drawer'>
-      Im tabs
+    <div class = 'tab-drawer' [ngClass]="{'empty': !item.content}">
+      {{ item.content }}
     </div>
     <div class = "modal-body">
       Im the body!
@@ -27,5 +27,6 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./BaseModal.css'],
 })
 export class BaseModalComponent {
-
+  item = { content: 'Tab drawer' };
+  
 }

@@ -6,6 +6,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
   
   .modal-header {
@@ -40,6 +41,11 @@
   .tab-drawer {
     flex: 0 1 auto;
     padding: 20px;
+  }
+
+  .tab-drawer.empty {
+    flex: 0 1 auto;
+    padding: 0px;
   }
 
   .page-label-text {
