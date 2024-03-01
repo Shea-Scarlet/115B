@@ -1,90 +1,57 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
-
+import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
 @Component({
   selector: 'PopUpForm-Button',
   standalone: true,
-  imports: [CommonModule, MatGridListModule, MatCardModule],
+  imports: [CommonModule],
   template: ` 
 <button
-    *ngIf="!popUpForm"
     type="button"
     (click)="toggleModal()"
     [ngClass]="classes"
     >
     {{ label }}
   </button>
-  <div *ngIf="popUpForm" [ngClass]="{'OuterBaseModal': true}"> 
-    <div [ngClass]="{'Header': true}"></div>
-      <div [ngClass]="{'Body': true}">
-        <mat-grid-list cols="1" rowHeight="100px">
-          <mat-grid-tile>
-            <mat-card>
-              <mat-card-content>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card></mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card></mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card></mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-card></mat-card>
-          </mat-grid-tile>
-        </mat-grid-list>
-      </div>
-    <div [ngClass]="{'Footer': true}"> Footer</div>
+      <div [ngClass]="{'popUpComponent': popUpForm}">
+    <ng-container #componentContainer></ng-container>
   </div>
   `,
   styleUrls: ['./PopUpFormButton.css'],
 })
 export class PopUpFormButtonComponent {
- 
-
-  /**
-   * What background color to use
-   */
-  @Input()
-  backgroundColor?: string;
-
-  /**
-   * How large should the button be?
-   */
-  @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
+  @ViewChild('componentContainer', { read: ViewContainerRef }) componentContainer: ViewContainerRef;
+  constructor() {
+    this.componentContainer ??= {} as ViewContainerRef;
+  }
 
   /**
    * Button contents
-   *
    * @required
    */
   @Input()
   label = 'Button';
-
   /**
-   * Optional click handler
+   * Input to accept another component
+   * @required
    */
-  @Output()
-  onClick = new EventEmitter<Event>();
+  @Input() customComponent: any; 
 
+  loadComponent() {
+    const componentRef = this.componentContainer.createComponent(this.customComponent);
+  }
+  
   popUpForm = false;
   toggleModal() {
     this.popUpForm = true;
     if (this.popUpForm){
-      this.onClick.emit();
+      const componentRef = this.componentContainer.createComponent(this.customComponent);
+      
     }
   }
 
-  public get classes(): string[] {
+public get classes(): string[] {
 
-    return ['PopUpForm-Button', `PopUpForm-Button--${this.size}`,];
+    return ['PopUpForm-Button',];
   }
 }
 
