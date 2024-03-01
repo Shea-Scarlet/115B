@@ -1,0 +1,53 @@
+
+.OuterBaseModal{
+    border: 1px solid;
+    position: relative;
+    border-radius: 2em;
+    height: 700px;
+    width: 900px;
+}
+
+.Header{
+    border: 1px solid;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    height: 190px;
+    width: 900px;
+    background-color: #002544;
+}
+
+.Body{
+    height: 450px;
+    border: 0px solid;
+    width: 900px;
+    overflow: scroll;
+    position: relative;
+    top: 20px;
+}
+
+.Footer{
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    height: 50px;
+    width: 900px;
+    background-color: white;
+}
+mat-card-content {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+mat-card{
+    width:  850px;
+    height: 100px;
+    margin: 50 px;
+    border-top: solid 1px;
+    border-color: lightgrey;
+}
+
+mat-grid-tile {
+    background: white;
+}
