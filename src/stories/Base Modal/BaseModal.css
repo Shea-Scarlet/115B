@@ -23,9 +23,11 @@
   .modal-body {
     background-color: skyblue;
     min-height: 300px;
+    min-height: 300px;
     padding: 20px;
     box-sizing: border-box;
     flex: 1 1 auto;
+    overflow-y: auto;
   }
   
   .modal-footer {
@@ -41,11 +43,6 @@
   .tab-drawer {
     flex: 0 1 auto;
     padding: 20px;
-  }
-
-  .tab-drawer.empty {
-    flex: 0 1 auto;
-    padding: 0px;
   }
 
   .page-label-text {
