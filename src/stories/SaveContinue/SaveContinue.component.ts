@@ -19,8 +19,6 @@ import type { User } from '../user';
         </section>
       </article>
       </div>
-    <button *ngIf="!showModal" (click)="saveAndClose()">Save and Close</button>
-    <p>Show Background: {{showBackground}}</p> <!-- Debug output -->
   </div>`,
   styleUrls: ['./SaveContinue.css'],
 })
