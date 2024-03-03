@@ -1,4 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import type { Meta, Story } from '@storybook/angular';
+import { action } from '@storybook/addon-actions';
 
 import { NonAutomatedCheckoffButtonComponent } from './NonAutomatedCheckoffButton.component';
 
@@ -21,7 +22,11 @@ const meta: Meta<NonAutomatedCheckoffButtonComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<NonAutomatedCheckoffButtonComponent>;
 
-// Exports story to storybook render
-export const Base: Story = {};
+export const Base: Story<NonAutomatedCheckoffButtonComponent> = (args: NonAutomatedCheckoffButtonComponent) => ({
+  component: NonAutomatedCheckoffButtonComponent,
+  props: {
+    ...args,
+    checkboxChange: action('Checkbox state changed')
+  }
+});
