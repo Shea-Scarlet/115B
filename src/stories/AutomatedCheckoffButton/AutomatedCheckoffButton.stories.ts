@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/angular';
 import { AutomatedCheckoffButtonComponent } from './AutomatedCheckoffButton.component';
 
 const meta: Meta<AutomatedCheckoffButtonComponent> = {
-  title: 'AutomatedCheckoffButton',
+  title: 'Automated Checkoff Button',
   component: AutomatedCheckoffButtonComponent,
   tags: ['autodocs'],
   parameters: {
@@ -24,4 +24,15 @@ export default meta;
 type Story = StoryObj<AutomatedCheckoffButtonComponent>;
 
 // Exports story to storybook render
-export const Base: Story = {};
+
+export const TaskCompleted: Story = {
+  args: {
+    isTaskCompleted: true,
+  },
+};
+
+export const TaskNotCompleted: Story = {
+  args: {
+    isTaskCompleted: false,
+  },
+};

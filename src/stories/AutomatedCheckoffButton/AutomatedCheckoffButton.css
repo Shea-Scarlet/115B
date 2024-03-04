@@ -1,69 +1,29 @@
-.AutomatedCheckoffButton {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 48px 20px;
-    margin: 0 auto;
-    max-width: 600px;
-    color: #333;
-  }
-  
-  .AutomatedCheckoffButton h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1;
-    margin: 0 0 4px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .AutomatedCheckoffButton p {
-    margin: 1em 0;
-  }
-  
-  .AutomatedCheckoffButton a {
-    text-decoration: none;
-    color: #1ea7fd;
-  }
-  
-  .AutomatedCheckoffButton ul {
-    padding-left: 30px;
-    margin: 1em 0;
-  }
-  
-  .AutomatedCheckoffButton li {
-    margin-bottom: 8px;
-  }
-  
-  .AutomatedCheckoffButton .tip {
-    display: inline-block;
-    border-radius: 1em;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-    background: #e7fdd8;
-    color: #66bf3c;
-    padding: 4px 12px;
+.NonAutomatedCheckoffButton {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: top;
+  color: #0072CE;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px; /* Rounded corners */
+  fill: #fff; /* White checkmark */
+}
+
+  .checkmark-circle {
+    display: flex;
+    vertical-align: middle;
     margin-right: 10px;
-    vertical-align: top;
   }
   
-  .AutomatedCheckoffButton .tip-wrapper {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  .checkmark-circle svg {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
   }
-  
-  .AutomatedCheckoffButton .tip-wrapper svg {
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    margin-right: 4px;
-    vertical-align: top;
-    margin-top: 3px;
-  }
-  
-  .AutomatedCheckoffButton .tip-wrapper svg path {
-    fill: #1ea7fd;
+
+  .task-container {
+    display: flex;
+    align-items: center;
   }

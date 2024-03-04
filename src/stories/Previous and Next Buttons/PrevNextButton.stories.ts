@@ -47,26 +47,23 @@ const meta: Meta<PrevNextButtonComponent> = {
 export default meta;
 type Story = StoryObj<PrevNextButtonComponent>;
 
-export const Medium: Story = {
+export const FirstPage: Story = {
   args: {
-    size: 'medium',
     value: 0,
     maxValue: 10,
   },
 };
 
-export const Small: Story = {
+export const MiddlePage: Story = {
   args: {
-    size: 'small',
-    value: 0,
+    value: 5,
     maxValue: 10,
   },
 };
 
-export const Large: Story = {
+export const LastPage: Story = {
   args: {
-    size: 'large',
-    value: 0,
+    value: 10,
     maxValue: 10,
   },
 };
