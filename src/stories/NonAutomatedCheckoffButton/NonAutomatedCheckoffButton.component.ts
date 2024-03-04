@@ -1,17 +1,17 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import type { MatCheckboxChange } from '@angular/material/checkbox';
-import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import type { User } from '../user';
 
 @Component({
   selector: 'NonAutomatedCheckoffButton',
   standalone: true,
-  imports: [CommonModule, MatCheckboxModule],
+  imports: [CommonModule],
   template: `<article [ngClass]="{'NonAutomatedCheckoffButton': true}">
     <section>
-      <mat-checkbox labelPosition="before" (change)="onCheckboxChange($event)">Validate</mat-checkbox>
+      <label>
+        Validate <input type="checkbox" [checked]="isChecked" (change)="onCheckboxChange($event)">
+      </label>
     </section>
   </article>`,
   styleUrls: ['./NonAutomatedCheckoffButton.css'],
@@ -19,9 +19,14 @@ import type { User } from '../user';
 export class NonAutomatedCheckoffButtonComponent {
   user: User | null = null;
 
+  @Input() isChecked = false;
   @Output() checkboxChange = new EventEmitter<boolean>();
 
-  onCheckboxChange(event: MatCheckboxChange) {
-    this.checkboxChange.emit(event.checked);
+  onCheckboxChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    if (target) {
+      this.isChecked = target.checked;
+      this.checkboxChange.emit(this.isChecked);
+    }
   }
 }
