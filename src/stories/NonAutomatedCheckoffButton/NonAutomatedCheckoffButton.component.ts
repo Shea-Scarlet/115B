@@ -9,7 +9,7 @@ import type { User } from '../user';
   selector: 'NonAutomatedCheckoffButton',
   standalone: true,
   imports: [CommonModule, MatCheckboxModule],
-  template: `<article class="NonAutomatedCheckoffButton">
+  template: `<article [ngClass]="{'NonAutomatedCheckoffButton': true}">
     <section>
       <mat-checkbox labelPosition="before" (change)="onCheckboxChange($event)">Validate</mat-checkbox>
     </section>
