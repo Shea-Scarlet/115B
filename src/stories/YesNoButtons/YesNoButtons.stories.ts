@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { YesNoButtons } from './YesNoButtons';
+import { YesNoButtons} from './YesNoButtons.component';
 
 const meta: Meta<YesNoButtons> = {
   title: 'Yes No Buttons',
@@ -21,6 +21,28 @@ const meta: Meta<YesNoButtons> = {
 
 export default meta;
 type Story = StoryObj<YesNoButtons>;
+
+export const NoInput = {
+  args:{
+    isYesSelected: null
+
+  }
+}
+
+export const YesClicked = {
+  args:{
+    isYesSelected: true
+
+  }
+}
+
+export const NoClicked = {
+  args:{
+    isYesSelected: false
+
+  }
+}
+
 
 // Exports story to storybook render
 export const Base: Story = {};
