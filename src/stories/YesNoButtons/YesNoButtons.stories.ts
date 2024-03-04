@@ -18,7 +18,7 @@ const meta: Meta<YesNoButtons> = {
     },
   },
 };
-
+//
 export default meta;
 type Story = StoryObj<YesNoButtons>;
 
