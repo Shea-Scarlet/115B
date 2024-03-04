@@ -1,0 +1,68 @@
+
+
+
+div{
+    display: flex;
+    padding-left: 2.8125rem;
+    align-items: center;
+    gap: 0.75rem;
+
+
+  }
+
+
+  .selected.yes {
+    border-radius: 0.3125rem;
+background: var(--Foundation-Blue-blue-300, #54A1DE);
+    
+    color: var(--Color, #FFF);
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .yes {
+    display: inline-block;
+    width: 5rem;
+    padding: 0.625rem 1.8750rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.3125rem;
+    background: var(--Foundation-Grey-grey-100, #D7DADD);
+    border-width: .2px;
+    color: var(--Color, #000000);
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .selected.no {
+    border-radius: 0.3125rem;
+    background: var(--warning, #A81121);
+    color: var(--Color, #FFF);
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .no {
+    display: inline-block;
+    width: 5rem;
+    padding: 0.625rem 1.875rem;
+    align-items: center;
+    border-radius: 0.3125rem;
+    margin-left: 10px;
+    border-width: .2px;
+    color: var(--Color, #000000);
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
