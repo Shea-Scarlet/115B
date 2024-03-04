@@ -26,7 +26,7 @@ background: var(--Foundation-Blue-blue-300, #54A1DE);
   .yes {
     display: inline-block;
     width: 5rem;
-    padding: 0.625rem 1.875rem;
+    padding: 0.625rem 1.8750rem;
     align-items: center;
     gap: 0.625rem;
     border-radius: 0.3125rem;
