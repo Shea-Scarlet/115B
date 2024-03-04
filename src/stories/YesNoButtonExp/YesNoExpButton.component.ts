@@ -48,14 +48,9 @@ export class YesNoExpButton {
   @Input() DynamicComponent: any; 
 //DynamicComponent replace with wanted component to drop down
   loadDynamicComponent() {
-    const dynamicComponentFactory = this.componentFactoryResolver.resolveComponentFactory(DynamicComponent);
+    const dynamicComponentFactory = this.componentFactoryResolver.resolveComponentFactory(this.DynamicComponent);
     this.dynamicComponentContainer.clear();
     const dynamicComponentRef = this.dynamicComponentContainer.createComponent(dynamicComponentFactory);
   }
 }
 
-@Component({
-  selector: 'app-dynamic-component',
-  template: '<p>This is a dynamically loaded component</p>',
-})
-export class DynamicComponent {}

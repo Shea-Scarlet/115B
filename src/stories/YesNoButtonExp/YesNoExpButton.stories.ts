@@ -4,6 +4,7 @@ import { YesNoExpButton } from './YesNoExpButton.component';
 import { YesNoButtons } from '../YesNoButttons/YesNoButtons.component'; 
 import { BaseModal } from '../Base Modal/BaseModal.component'; 
 import {CardComponent} from '../Card/Card.component';
+import {SaveContinueComponent} from '../SaveContinue/SaveContinue.component';
 
 const meta: Meta<YesNoExpButton> = {
   title: 'Yes No Buttons Expansion',
@@ -36,9 +37,15 @@ export const NoInput = {
   }
 }
 
-export const blososoClicked  = {
-  DynamicComponent: YesNoButtons,
-  isYesSelected: true, // Set the initial state as per your requirement
-  isDialogExpanded: true,
-};
+export const FollowUpYesNo = {
+  args:{  
+    DynamicComponent:YesNoButtons
+  }
+}
 
+export const SaveAndContinue = {
+  args:{
+    DynamicComponent:SaveContinueComponent
+
+  }
+}
