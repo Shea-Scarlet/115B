@@ -1,32 +1,35 @@
-import type { Meta, Story } from '@storybook/angular';
+import type { Meta, StoryObj } from '@storybook/angular';
 import { action } from '@storybook/addon-actions';
-
 import { NonAutomatedCheckoffButtonComponent } from './NonAutomatedCheckoffButton.component';
 
-const meta: Meta<NonAutomatedCheckoffButtonComponent> = {
+export default {
   title: 'NonAutomatedCheckoffButton',
   component: NonAutomatedCheckoffButtonComponent,
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-    docs: {
-      description: {
-        // Add component description here:
-        component:
-          'The NonAutomatedCheckoffButton will be used to have the user verify that\
-          they have correctly inputted the information before they continue to\
-          the next page.',
-      },
-    },
+  argTypes: {
+    checkboxChange: { action: 'checkboxChange', table: { type: { summary: 'boolean' } } },
   },
-};
+} as Meta;
 
-export default meta;
-
-export const Base: Story<NonAutomatedCheckoffButtonComponent> = (args: NonAutomatedCheckoffButtonComponent) => ({
+export const Uncheck: StoryObj<NonAutomatedCheckoffButtonComponent> = (args: NonAutomatedCheckoffButtonComponent) => ({
   component: NonAutomatedCheckoffButtonComponent,
   props: {
     ...args,
-    checkboxChange: action('Checkbox state changed')
-  }
+    checkboxChange: action('checkboxChange'),
+  },
 });
+Uncheck.args = {
+  user: null,
+  isChecked: false,
+};
+
+export const Check: StoryObj<NonAutomatedCheckoffButtonComponent> = (args: NonAutomatedCheckoffButtonComponent) => ({
+  component: NonAutomatedCheckoffButtonComponent,
+  props: {
+    ...args,
+    checkboxChange: action('checkboxChange'),
+  },
+});
+Check.args = {
+  user: null,
+  isChecked: true,
+};
