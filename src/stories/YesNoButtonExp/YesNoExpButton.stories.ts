@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
 import { YesNoExpButton } from './YesNoExpButton.component';
+import { YesNoButtons } from '../YesNoButttons/YesNoButtons.component'; 
+import { BaseModal } from '../Base Modal/BaseModal.component'; 
+import {CardComponent} from '../Card/Card.component';
+import {SaveContinueComponent} from '../SaveContinue/SaveContinue.component';
 
 const meta: Meta<YesNoExpButton> = {
   title: 'Yes No Buttons Expansion',
@@ -25,5 +29,23 @@ const meta: Meta<YesNoExpButton> = {
 export default meta;
 type Story = StoryObj<YesNoExpButton>;
 
-// Exports story to storybook render
-export const Base: Story = {};
+export const NoInput = {
+  args:{
+    isYesSelected: null,
+    isDialogExpanded: null
+
+  }
+}
+
+export const FollowUpYesNo = {
+  args:{  
+    DynamicComponent:YesNoButtons
+  }
+}
+
+export const SaveAndContinue = {
+  args:{
+    DynamicComponent:SaveContinueComponent
+
+  }
+}
