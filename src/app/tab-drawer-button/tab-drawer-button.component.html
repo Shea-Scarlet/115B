@@ -1,0 +1,11 @@
+<button
+  type="button"
+  (click)="onButtonClick($event)"
+  [ngClass]="classes"
+  [ngStyle]="{ 'background-color': dynamicBackgroundColor || backgroundColor }"
+>
+  <span>
+    <mat-icon class="icon-display" color="accent">check_circle</mat-icon>
+  </span>
+  {{ label }}
+</button>
