@@ -1,0 +1,38 @@
+.tab-drawer-button {
+  font-family: 'rubik';
+  font-weight: 500;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  gap: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 1; */
+}
+.tab-drawer-button--primary {
+  color: white;
+  background-color: transparent;
+}
+.tab-drawer-button--secondary {
+  color: black;
+  background-color: transparent;
+}
+.tab-drawer-button--incomplete span {
+  display: none;
+}
+.tab-drawer-button--complete span {
+  padding-top: 4px;
+}
+.tab-drawer-button--inProgress span {
+  display: none;
+}
+.tab-drawer-button--inProgress {
+  background-color: #667B9E;
+}
+.mat-icon {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}

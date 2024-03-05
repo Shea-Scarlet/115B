@@ -1,0 +1,62 @@
+<div class="tab-buttons">
+  <ng-container *ngFor="let key of objectKeys(tabsConfig.tabs); let i = index">
+    <app-tab-drawer-button
+      [primary]="true"
+      [status]="tabsConfig.tabs[key].status"
+      [label]="tabsConfig.tabs[key].label"
+      (click)="selectTab(i+1)">
+    </app-tab-drawer-button>
+  </ng-container>
+</div>
+<ng-container *ngFor="let key of objectKeys(tabsConfig.tabs); let i = index">
+  <app-tab [active]="activeTabIndex === i+1">
+    <div class="content">
+      <div class="stack">
+        <div class="flex">
+          <div class="left">
+            <strong>{{tabsConfig.tabs[key].label}} (option1)</strong>
+            <p>Choose and set up your sign in method</p>
+          </div>
+          <div class="right">
+            <button mat-raised-button color="accent">Single Sign On</button>
+            <button mat-raised-button color="accent">Multifactor Authentication</button>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="left">
+            <strong>{{tabsConfig.tabs[key].label}} (option2)</strong>
+            <p>Choose and set up your sign in method</p>
+          </div>
+          <div class="right">
+            <button mat-raised-button color="accent">Single Sign On</button>
+            <button mat-raised-button color="accent">Multifactor Authentication</button>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="left">
+            <strong>{{tabsConfig.tabs[key].label}} (option3)</strong>
+            <p>Choose and set up your sign in method</p>
+          </div>
+          <div class="right">
+            <button mat-raised-button color="accent">Single Sign On</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-tab>
+</ng-container>
+<!-- <app-tab [active]="activeTabIndex === 1">
+  Content for 1. Preparations
+</app-tab>
+<app-tab [active]="activeTabIndex === 2">
+  Content for 2. Data Sources
+</app-tab>
+<app-tab [active]="activeTabIndex === 3">
+  Content for 3. Risks & LSAs
+</app-tab>
+<app-tab [active]="activeTabIndex === 4">
+  Content for 4. Ticketing & Remedations
+</app-tab>
+<app-tab [active]="activeTabIndex === 5">
+  Content for 5. Review & Reports
+</app-tab> -->
