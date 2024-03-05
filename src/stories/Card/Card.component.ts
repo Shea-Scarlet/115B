@@ -39,11 +39,11 @@ export class CardComponent {
     this.loadComponents();
   }
 
-  @Input() title?: string;
-  @Input() explanation?: string;
-  @Input() dataField1?: string;
-  @Input() dataField2?: string;
-  @Input() imageUrl?: string; 
+  @Input() title = "Default Title!";
+  @Input() explanation = "Explanation goes here!";
+  @Input() dataField1 = "Some data = 123";
+  @Input() dataField2 = "The other data = 098";
+  @Input() imageUrl = "https://material.angular.io/assets/img/examples/shiba2.jpg"; 
 
   @Input() checkboxComponent: any;
   @Input() infoComponent: any;
