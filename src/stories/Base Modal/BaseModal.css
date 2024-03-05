@@ -72,8 +72,10 @@
   }
 
   .tab-drawer {
-    flex: 0 1 auto;
-    padding: 20px;
+    flex: 0 1 50px;
+    padding: 10px;
+    background-color: rgba(0, 37, 84);
+    border-top: 2px solid rgba(88, 111, 142, 0.2);
   }
 
   .page-label-text {

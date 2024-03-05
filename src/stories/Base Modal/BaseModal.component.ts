@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
+import { Component, Input, ViewChild, ViewContainerRef, ChangeDetectorRef, AfterViewInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -19,7 +19,11 @@ import { CommonModule } from '@angular/common';
       </div>
 
       <div class="modal-body">
-          
+          <ng-container *ngIf="!hasCustomBody"> 
+            <div class="default-card" *ngFor="let _ of defaultCardsArray; let i = index"> 
+                I'm the default card content! (Index: {{ i }}) 
+            </div>
+          </ng-container>
         <ng-container #bodyContainer></ng-container>
       </div>
 
@@ -31,8 +35,14 @@ import { CommonModule } from '@angular/common';
   `,
   styleUrls: ['./BaseModal.css'],
 })
-export class BaseModalComponent {
+export class BaseModalComponent implements AfterViewInit{
+
+  // loads components when stories and other variables update containers for components
+  ngAfterViewInit() {
+    this.loadComponents(); 
+  }
   
+  // Card count for the default ngif cards I have conditionally displayed when no components are given
   @Input() defaultCardCount = 8;
   defaultCardsArray = new Array(this.defaultCardCount).fill(null);
 
@@ -40,9 +50,9 @@ export class BaseModalComponent {
   @Input() headerText = "Welcome Home Depot!";
   @Input() subtitleText = "You're so awesome and you deserve at least two cookies! Today we are going to be helping you set up the connections from yours stuffs to our stuffs!";
 
-  @Input() hasCustomTitle = false; 
-  @Input() hasCustomBody = false;
-  @Input() hasCustomFooter = false;
+  hasCustomTitle = false; 
+  hasCustomBody = false;
+  hasCustomFooter = false;
 
   @Input() tabDrawerComponent: any;
   @Input() bodyComponent: any;
@@ -51,17 +61,19 @@ export class BaseModalComponent {
   @ViewChild('tabDrawerContainer', { read: ViewContainerRef }) tabDrawerContainer!: ViewContainerRef;
   @ViewChild('bodyContainer', { read: ViewContainerRef }) bodyContainer!: ViewContainerRef;
   @ViewChild('footerContainer', { read: ViewContainerRef }) footerContainer!: ViewContainerRef;
+
   
   loadComponents() {
     if (this.tabDrawerComponent) {
       this.tabDrawerContainer.createComponent(this.tabDrawerComponent);
     }
     if (this.bodyComponent) {
-      this.hasCustomBody = true; /* to hide defualt body content upon component fill */
       this.bodyContainer.createComponent(this.bodyComponent);
+      this.hasCustomBody = true; /* to hide default body content upon component fill */
     }
     if (this.footerComponent) {
       this.footerContainer.createComponent(this.footerComponent);
+      this.hasCustomFooter = true;
     }
   }
 
