@@ -1,20 +1,40 @@
+//
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-import type { User } from '../user';
+import { Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'YesNoButtons',
-  standalone: true,
-  imports: [CommonModule],
-  template: `<article>
-    <section class="YesNoButtons">
-      <h2>Yes No Buttons Component</h2>
-      <p>Yes No Button implementation tba.</p>
-    </section>
-  </article>`,
+  template: `
+  <div>
+    <button type="button" (click)="toggleSelection(true)" [class]="yesButtonClasses">Yes</button>
+    <button type="button" (click)="toggleSelection(false)" [class]="noButtonClasses">No</button>
+    </div>
+  `,
   styleUrls: ['./YesNoButtons.css'],
 })
+
+//isYesSelected
+
 export class YesNoButtons {
-  user: User | null = null;
+  isYesSelected: boolean | null = null;
+  get yesButtonClasses(): string {
+    return this.isYesSelected === true ? 'selected yes' : 'yes';
+  }
+
+  get noButtonClasses(): string {
+    return this.isYesSelected === false ? 'selected no' : 'no';
+  }
+
+  @Output()
+
+  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
+
+  onClick = new EventEmitter<boolean>();
+
+  toggleSelection(value: boolean) {
+    this.isYesSelected = value;
+    this.onClick.emit(value);
+  }
 }
+
+///

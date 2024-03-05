@@ -1,69 +1,26 @@
-.NonAutomatedCheckoffButtonComponent {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 48px 20px;
-    margin: 0 auto;
-    max-width: 600px;
-    color: #333;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1;
-    margin: 0 0 4px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent p {
-    margin: 1em 0;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent a {
-    text-decoration: none;
-    color: #1ea7fd;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent ul {
-    padding-left: 30px;
-    margin: 1em 0;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent li {
-    margin-bottom: 8px;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent .tip {
-    display: inline-block;
-    border-radius: 1em;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-    background: #e7fdd8;
-    color: #66bf3c;
-    padding: 4px 12px;
-    margin-right: 10px;
-    vertical-align: top;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent .tip-wrapper {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent .tip-wrapper svg {
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    margin-right: 4px;
-    vertical-align: top;
-    margin-top: 3px;
-  }
-  
-  .NonAutomatedCheckoffButtonComponent .tip-wrapper svg path {
-    fill: #1ea7fd;
-  }
+/* Apply custom styles to the checkoff button */
+.NonAutomatedCheckoffButton {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: top;
+  color: #0072CE;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px; /* Rounded corners */
+  fill: #fff; /* White checkmark */
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;  /* adjust as needed */
+  width: 20px;  /* adjust as needed */
+  height: 20px;  /* adjust as needed */
+}
