@@ -1,31 +1,32 @@
-.Link-Button {
-    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    border: 0;
-    border-radius: 3em;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1;
-  }
-  .Link-Button--primary {
-    color: white;
-    background-color: #1ea7fd;
-  }
-  .Link-Button--secondary {
-    color: #333;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-  }
-  .Link-Button--small {
-    font-size: 12px;
-    padding: 10px 16px;
-  }
-  .Link-Button--medium {
-    font-size: 14px;
-    padding: 11px 20px;
-  }
-  .Link-Button--large {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-  
+.ButtonsWithLinks {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem 1.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 2.5rem;
+  background: var(--Foundation-Green-green-400, #0BB26B);
+  color: #D2D9E6;
+
+/* Paragraph/P - Bold - 16pt Rubik */
+  font-family: Rubik;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0BB26B;
+
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+

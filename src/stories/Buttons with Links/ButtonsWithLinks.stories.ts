@@ -31,15 +31,16 @@ const meta: Meta<ButtonsWithLinksComponent> = {
 export default meta;
 type Story = StoryObj<ButtonsWithLinksComponent>;
 
-export const PlaceHolder0: Story = {
+export const Youtube: Story = {
   args: {
-    label: 'Button with Link',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    label: 'Youtube',
   },
 };
 
-export const PlaceHolder1: Story = {
+export const linkedin: Story = {
   args: {
-    size: 'large',
-    label: 'Button',
+    link: 'https://www.linkedin.com/in/paden-portillo/',
+    label: 'ultra cool guy',
   },
 };
