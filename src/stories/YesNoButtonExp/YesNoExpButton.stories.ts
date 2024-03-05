@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/angular';
 
 import { YesNoExpButton } from './YesNoExpButton.component';
 import { YesNoButtons } from '../YesNoButttons/YesNoButtons.component'; 
-import { BaseModal } from '../Base Modal/BaseModal.component'; 
+import { BaseModalComponent } from '../Base Modal/BaseModal.component'; 
 import {CardComponent} from '../Card/Card.component';
 import {SaveContinueComponent} from '../SaveContinue/SaveContinue.component';
 

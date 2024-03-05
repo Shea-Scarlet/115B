@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
 import { PopUpFormButtonComponent } from './PopUpFormButton.component';
-import { BaseModal } from '../Base Modal/BaseModal.component'; 
+import { BaseModalComponent } from '../Base Modal/BaseModal.component'; 
 import {CardComponent} from '../Card/Card.component';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
@@ -36,7 +36,7 @@ type Story = StoryObj<PopUpFormButtonComponent>;
 export const PopUpFormWithBaseModal: Story = {
   args: {
     label: 'Pop Up Base Modal',
-    customComponent: BaseModal,
+    customComponent: BaseModalComponent,
   },
 };
 
