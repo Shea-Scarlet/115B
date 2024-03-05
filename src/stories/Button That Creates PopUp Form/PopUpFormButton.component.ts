@@ -26,7 +26,7 @@ export class PopUpFormButtonComponent {
 
   /**
    * Button contents
-   * @required
+   * @required`
    */
   @Input()
   label = 'Button';
@@ -34,9 +34,11 @@ export class PopUpFormButtonComponent {
    * Input to accept another component
    * @required
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   @Input() customComponent: any; 
 
   loadComponent() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const componentRef = this.componentContainer.createComponent(this.customComponent);
   }
   
@@ -44,6 +46,7 @@ export class PopUpFormButtonComponent {
   toggleModal() {
     this.popUpForm = true;
     if (this.popUpForm){
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const componentRef = this.componentContainer.createComponent(this.customComponent);
       
     }

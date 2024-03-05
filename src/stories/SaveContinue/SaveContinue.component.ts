@@ -1,40 +1,63 @@
-import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import type { User } from '../user';
+import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
 
 @Component({
-  selector: 'SaveContinue',
+  selector: 'SaveContinueComponent',
   standalone: true,
   imports: [CommonModule],
-  template: `<div class="modal" [ngClass]="{'is-active': true}">
-   <div class="modal-background" *ngIf="showBackground"></div>
-    <div class="modal-content">
-      <article>
-        <section class="SaveContinue">
-          <h2>Save and Continue</h2>
-          <p>Click the button below to save your progress and close the page.</p>
-          <button (click)="saveAndClose()">Save and Close</button>
-          <p *ngIf="lastSaved">Last saved at: {{lastSaved}}</p>
-        </section>
-      </article>
-      </div>
-  </div>`,
+  template: ` 
+<button
+    type="button"
+    (click)="toggleModal()"
+    [ngClass]="classes"
+    >
+    {{ label }}
+  </button>
+      <div [ngClass]="{'SaveContinueComponent': popUpForm}">
+    <ng-container #componentContainer></ng-container>
+  </div>
+  <p>Last saved at: {{ lastSavedDateTime }}</p>
+  `,
   styleUrls: ['./SaveContinue.css'],
 })
 export class SaveContinueComponent {
-  user: User | null = null;
-  lastSaved: string | null = null;
-  isActive = true;
-  showBackground = true; // This property controls the visibility of the modal background
-  showModal = true; // This property controls the visibility of the entire modal
+  @ViewChild('componentContainer', { read: ViewContainerRef }) componentContainer: ViewContainerRef;
+  lastSavedDateTime: string = '';
 
-  // eslint-disable-next-line @angular-eslint/no-output-on-prefix
-  @Output() onClose = new EventEmitter<string>();
+  constructor() {
+    this.componentContainer ??= {} as ViewContainerRef;
+  }
 
-  saveAndClose() {
-    this.lastSaved = new Date().toLocaleString();
-    this.onClose.emit(this.lastSaved);
-    this.isActive = false;
+  /**
+   * Button contents
+   * @required`
+   */
+  @Input()
+  label = 'Button';
+  /**
+   * Input to accept another component
+   * @required
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  @Input() customComponent: any; 
+
+  loadComponent() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const componentRef = this.componentContainer.createComponent(this.customComponent);
+  }
+  
+  popUpForm = false;
+  toggleModal() {
+    this.popUpForm = !this.popUpForm;
+    if (this.popUpForm){
+      this.loadComponent();
+    } else {
+      this.componentContainer.clear();
+    }
+    this.lastSavedDateTime = new Date().toLocaleString();
+  }
+
+  public get classes(): string[] {
+    return ['SaveContinueComponent',];
   }
 }
