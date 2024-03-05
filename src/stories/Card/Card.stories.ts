@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
 import { CardComponent } from './Card.component';
+import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextButton.component';
 
 const meta: Meta<CardComponent> = {
   title: 'Card',
@@ -28,9 +29,44 @@ export default meta;
 type Story = StoryObj<CardComponent>;
 
 // Exports story to storybook render
-export const BaseCard: Story = {
+export const CardWithAllElements: Story = {
   args: {
     title: 'Default Title!',
-    explanation: "I've explained this well!"
+    explanation: "I've explained this well!",
+    dataField1: "Woah some data!",
+    dataField2: "Woah more data!",
+    imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    infoComponent: PrevNextButtonComponent,
+    checkboxComponent: PrevNextButtonComponent,
+  },
+};
+
+export const PhotoAndTitle: Story = {
+  args: {
+    title: 'Default Title!',
+    explanation: "I've explained this well!",
+    imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg",
+  },
+};
+
+export const TitleDataAndCheckbox: Story = {
+  args: {
+    title: 'Default Title!',
+    explanation: "I've explained this well!",
+    dataField1: "Woah some data!",
+    dataField2: "Woah more data!",
+    imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    checkboxComponent: PrevNextButtonComponent,
+  },
+};
+
+export const TitleDataAndInfo: Story = {
+  args: {
+    title: 'Default Title!',
+    explanation: "I've explained this well!",
+    dataField1: "Woah some data!",
+    dataField2: "Woah more data!",
+    imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg",
+    infoComponent: PrevNextButtonComponent,
   },
 };

@@ -1,4 +1,4 @@
-import { Component, Input  } from '@angular/core';
+import { Component, Input, ViewChild, ViewContainerRef, AfterViewInit  } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
@@ -6,30 +6,58 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule],
   template: `
-  <mat-card class = "outter-card">
-    <div class = "card-content-container">
+  <mat-card class="outter-card">
+    <div class="card-content-container">
       <div class = "card-image">
-      <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"  alt="Image of a Shiba Inu">
+        <img mat-card-md-image src="{{ imageUrl }}" alt="Card Image">
       </div>
-      <div class = "card-text">
+      <div class = "card-title-area">
         <mat-card-title class = "title-option">{{ title }}</mat-card-title>
         <mat-card-subtitle class = "explanation-option">{{ explanation }}</mat-card-subtitle>
       </div>
-      <div class = "data-field-1">
-        Bagels Collected: 12,540
+      <div class="data-field-1">
+        {{ dataField1 }} </div>
+      <div class="data-field-2">
+        {{ dataField2 }} </div>
+
+      <div class="checkbox-field">
+        <ng-container #checkboxField></ng-container> 
       </div>
-      <div class = "data-field-2">
-        Bread Sliced: 180,000
-      </div>
-      <div class = "checkbox-field">
-        check?
+
+      <div class="info-component-container">
+        <ng-container #infoComponentContainer></ng-container>
       </div>
     </div>
   </mat-card>
+
   `,
   styleUrls: ['./Card.css'],
 })
 export class CardComponent {
+  
+  ngAfterViewInit() {
+    this.loadComponents();
+  }
+
   @Input() title?: string;
   @Input() explanation?: string;
+  @Input() dataField1?: string;
+  @Input() dataField2?: string;
+  @Input() imageUrl?: string; 
+
+  @Input() checkboxComponent: any;
+  @Input() infoComponent: any;
+
+  @ViewChild('checkboxField', { read: ViewContainerRef }) checkboxContainer!: ViewContainerRef;
+  @ViewChild('infoComponentContainer', { read: ViewContainerRef }) infoComponentContainer!: ViewContainerRef;
+
+
+  loadComponents() {
+    if (this.checkboxComponent) {
+      this.checkboxContainer.createComponent(this.checkboxComponent);
+    }
+    if (this.infoComponent) {
+      this.infoComponentContainer.createComponent(this.infoComponent);
+    }
+  }
 }

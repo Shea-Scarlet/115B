@@ -8,6 +8,7 @@
   padding-left: 50px;
   padding-right: 50px;
   gap: 50px;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Individual sections */
@@ -47,7 +48,13 @@
   flex: auto;
 }
 
-.card-text {
+.info-component-container {
+  margin: auto;
+  order: 6;
+  flex: auto;
+}
+
+.card-title-area {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -64,3 +71,4 @@
   cursor: pointer;    /* Indicate clickability */
   opacity: 0.8;      /* Slightly dim for feedback */
 }
+
