@@ -1,6 +1,7 @@
-import { action } from '@storybook/addon-actions';
-import type { Meta, StoryFn } from '@storybook/angular';
+import type { Meta, StoryObj } from '@storybook/angular';
 import {SaveContinueComponent} from './SaveContinue.component';
+import { BaseModalComponent } from '../Base Modal/BaseModal.component'; 
+
 
 const meta: Meta<SaveContinueComponent> = {
   title: 'Save and Continue',
@@ -20,23 +21,11 @@ const meta: Meta<SaveContinueComponent> = {
 };
 
 export default meta;
+type Story = StoryObj<SaveContinueComponent>;
 
-export const MainPage: StoryFn<SaveContinueComponent> = (args: SaveContinueComponent) => ({
-  component: SaveContinueComponent,
-  props: {
-    ...args,
-    onClose: action('Last saved at'),
-    isActive: true, // This will display the modal content
-    showModal: false, // This will hide the entire modal and display the button
+export const SaveAndContinue: Story = {
+  args: {
+    label: 'Save and Close',
+    customComponent: BaseModalComponent,
   },
-});
-
-export const WithPage: StoryFn<SaveContinueComponent> = (args: SaveContinueComponent) => ({
-  component: SaveContinueComponent,
-  props: {
-    ...args,
-    onClose: action('Last saved at'),
-    isActive: true, // This will display the modal content
-    showModal: true, // This will show the entire modal
-  },
-});
+};
