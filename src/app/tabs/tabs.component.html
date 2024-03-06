@@ -4,6 +4,7 @@
       [primary]="true"
       [status]="tabsConfig.tabs[key].status"
       [label]="tabsConfig.tabs[key].label"
+      [active]="activeTabIndex === i+1"
       (click)="selectTab(i+1)">
     </app-tab-drawer-button>
   </ng-container>

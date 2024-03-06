@@ -23,8 +23,12 @@ export class TabDrawerButtonComponent {
    * Button status:
    */
   @Input()
-  status: 'incomplete' | 'complete' | 'inProgress' = 'complete';
-
+  status: 'incomplete' | 'complete' = 'complete';
+  /**
+   * indicate active button
+   */
+  @Input()
+  active: boolean = false;
   /**
    * What background color to use
    */
@@ -50,23 +54,26 @@ export class TabDrawerButtonComponent {
 
   onButtonClick(event: Event) {
     event.preventDefault();
-    console.log('hello')
-    if (this.status === 'inProgress') {
-      this.status = 'incomplete'
-    } else if (this.status === 'complete') {
-      return;
-    } else {
-      this.status = 'inProgress'
-    }
+    // console.log('hello')
+    // if (this.status === 'inProgress') {
+    //   this.status = 'incomplete'
+    // } else if (this.status === 'complete') {
+    //   return;
+    // } else {
+    //   this.status = 'inProgress'
+    // }
 
-    this.onClick.emit(event);
+    // this.onClick.emit(event);
   }
 
   public get classes(): string[] {
     const mode = this.primary
       ? 'tab-drawer-button--primary'
       : 'tab-drawer-button--secondary';
+    const activeClass = this.active
+      ? 'tab-drawer-button--active'
+      : '';
 
-    return ['tab-drawer-button', `tab-drawer-button--${this.status}`, mode]
+    return ['tab-drawer-button', `tab-drawer-button--${this.status}`, activeClass, mode]
   }
 }

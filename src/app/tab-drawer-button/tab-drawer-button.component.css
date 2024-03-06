@@ -9,7 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
   /* line-height: 1; */
+}
+.tab-drawer-button--active {
+  background-color: #667B9E !important;
 }
 .tab-drawer-button--primary {
   color: white;
@@ -22,14 +26,11 @@
 .tab-drawer-button--incomplete span {
   display: none;
 }
+.tab-drawer-button--complete {
+  padding: 5px 14px;  /*TODO: don't think this padding is good */
+}
 .tab-drawer-button--complete span {
-  padding-top: 4px;
-}
-.tab-drawer-button--inProgress span {
-  display: none;
-}
-.tab-drawer-button--inProgress {
-  background-color: #667B9E;
+  padding-top: 4px;  /*TODO: temporaly padding not great */
 }
 .mat-icon {
   font-size: 20px;

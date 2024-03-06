@@ -45,7 +45,8 @@ export const Default: Story = {
   args: {
     primary: true,
     label: "1. Preparations",
-    status: "inProgress",
+    status: "complete",
+    active: true
   }
 }
 
@@ -53,6 +54,7 @@ export const Primary: Story = {
   args: {
     primary: false,
     label: "1. Preparations",
-    status: "complete",
+    status: "incomplete",
+    active: false,
   }
 }
