@@ -30,39 +30,10 @@ export const Default: Story = {
       tabs: {
         tab1: {label: "1. Preparations", status: "complete"},
         tab2: {label: "2. Data Sources", status: "complete"},
-        tab3: {label: "3. Risks & LSAs", status: "inProgress"},
+        tab3: {label: "3. Risks & LSAs", status: "incomplete"},
         tab4: {label: "4. Ticketing & Remedations", status: "incomplete"},
         tab5: {label: "5. Review & Reports", status: "incomplete"},
       }
     }
   }
 }
-
-// @Component({
-//   selector: 'app-tabs',
-//   standalone: true,
-//   imports: [TabComponent, CommonModule, MatButtonModule, TabDrawerButtonComponent],
-//   templateUrl: './tabs.component.html',
-//   styleUrl: './tabs.component.css'
-// })
-// export class TabsComponent {
-//   @Input() tabsConfig: TabsConfig = {
-//     numButtons: 5,
-//     tabs: {
-//       tab1: {label: "First Tab", status: "complete"},
-//       tab2: {label: "Second Tab", status: "complete"},
-//       tab3: {label: "Third Tab", status: "complete"},
-//       tab4: {label: "Fourth Tab", status: "complete"},
-//       tab5: {label: "Fifth Tab", status: "complete"},
-//     }
-//   };
-//   activeTabIndex = 0;
-
-//   selectTab(index: number): void {
-//     this.activeTabIndex = index;
-//   }
-
-//   objectKeys(tabsConfig: any) {
-//     return Object.keys(tabsConfig)
-//   }
-// }
