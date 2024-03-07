@@ -4,6 +4,10 @@ import { BaseModalComponent } from './BaseModal.component';
 
 import { CardComponent } from '../Card/Card.component';
 import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextButton.component';
+import { TabsComponent } from '../../app/tabs/tabs.component';
+import { TabDrawerButtonComponent } from '../../app/tab-drawer-button/tab-drawer-button.component';
+import { BodyBoxComponent } from '../../app/body-box/body-box.component';
+import bodyBoxStories from '../../app/body-box/body-box.stories';
 
 
 const meta: Meta<BaseModalComponent> = {
@@ -54,5 +58,15 @@ export const PopupModalWithCard: Story = {
     subtitleText: `This is the default explanation text, you can put whatever you want here and it should match the tab page or default!`,
     bodyComponent: CardComponent,
     footerComponent: PrevNextButtonComponent,
+  },
+};
+
+export const BrinqaEncapsulation: Story = {
+  args: {
+    pageTitle: 'Specific pop-up text',
+    headerText: 'This is not a popup!',
+    subtitleText: `This is the default explanation text, you can put whatever you want here and it should match the tab page or default!`,
+    footerComponent: PrevNextButtonComponent,
+    tabDrawerComponent: TabsComponent,
   },
 };
