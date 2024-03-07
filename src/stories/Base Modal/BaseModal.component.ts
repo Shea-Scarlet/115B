@@ -39,7 +39,7 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class BaseModalComponent implements AfterViewInit{
 
-  // loads components when stories and other variables update containers for components
+  // loads components after initial modal loads for inserted components
   ngAfterViewInit() {
     this.loadComponents(); 
   }
@@ -52,7 +52,7 @@ export class BaseModalComponent implements AfterViewInit{
   @Input() headerText = "Welcome Home Depot!";
   @Input() subtitleText = "You're so awesome and you deserve at least two cookies! Today we are going to be helping you set up the connections from yours stuffs to our stuffs!";
 
-  hasCustomTitle = false; 
+  hasCustomTitle = false;
   hasCustomBody = false;
   hasCustomFooter = false;
 
