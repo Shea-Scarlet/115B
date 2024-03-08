@@ -1,3 +1,38 @@
-<div [ngStyle]="styleObject">
-  <ng-content></ng-content>
-</div>
+<app-onboarding-div bgColor="white" maxWidth="872px" padding="10px 24px">
+  <app-onboarding-div
+    display="flex"
+    flexDirection="row"
+    justifyContent="space-between"
+    alignItems="center"
+  >
+    <app-onboarding-div
+      display="flex"
+      flexDirection="row"
+      justifyContent="center"
+      alignItems="center"
+      gap="10px"
+    >
+      <app-checkmark-icon [taskCompleted]="taskCompleted"></app-checkmark-icon>
+      <app-onboarding-div
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="left"
+      >
+        <p><strong>{{ title }}</strong></p>
+        <p>{{ subtext }}</p>
+      </app-onboarding-div>
+    </app-onboarding-div>
+    <app-onboarding-div
+      display="flex"
+      flexDirection="row"
+      justifyContent="center"
+      alignItems="center"
+      gap="20px"
+    >
+      <ng-container *ngFor="let button of buttons; let i = index">
+        <PopUpForm-Button [label]="button.label"></PopUpForm-Button>
+      </ng-container>
+    </app-onboarding-div>
+  </app-onboarding-div>
+</app-onboarding-div>

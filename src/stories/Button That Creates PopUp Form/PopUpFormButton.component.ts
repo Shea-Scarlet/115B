@@ -1,10 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
+
+export interface ButtonInputs {
+  label: string;
+}
+
 @Component({
   selector: 'PopUpForm-Button',
   standalone: true,
   imports: [CommonModule],
-  template: ` 
+  template: `
 <button
     type="button"
     (click)="toggleModal()"
@@ -35,20 +40,20 @@ export class PopUpFormButtonComponent {
    * @required
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  @Input() customComponent: any; 
+  @Input() customComponent: any;
 
   loadComponent() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const componentRef = this.componentContainer.createComponent(this.customComponent);
   }
-  
+
   popUpForm = false;
   toggleModal() {
     this.popUpForm = true;
     if (this.popUpForm){
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const componentRef = this.componentContainer.createComponent(this.customComponent);
-      
+
     }
   }
 
