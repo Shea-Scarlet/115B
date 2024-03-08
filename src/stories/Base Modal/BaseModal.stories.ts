@@ -40,7 +40,7 @@ export default meta;
 type Story = StoryObj<BaseModalComponent>;
 
 // Exports story to storybook render
-export const initialModalWithPopUpDialogue: Story = {
+export const initialModalWithTabs: Story = {
   args: {
     pageTitle: 'SET UP GUIDE',
     headerText: 'Welcome Disney!',
@@ -49,7 +49,6 @@ export const initialModalWithPopUpDialogue: Story = {
     tabDrawerComponent: PrevNextButtonComponent,
   },
 };
-
 
 export const PopupModalWithCard: Story = {
   args: {
