@@ -49,3 +49,24 @@ export const initialModalWithPopUpDialogue: Story = {
     tabDrawerComponent: PrevNextButtonComponent,
   },
 };
+
+
+export const PopupModalWithCard: Story = {
+  args: {
+    pageTitle: 'Specific pop-up text',
+    headerText: 'This is a pop up!',
+    subtitleText: `This is the default explanation text, you can put whatever you want here and it should match the tab page or default!`,
+    bodyComponent: CardComponent,
+    footerComponent: PrevNextButtonComponent,
+  },
+};
+
+export const BrinqaEncapsulation: Story = {
+  args: {
+    pageTitle: 'Specific pop-up text',
+    headerText: 'This is not a popup!',
+    subtitleText: `This is the default explanation text, you can put whatever you want here and it should match the tab page or default!`,
+    footerComponent: PrevNextButtonComponent,
+    tabDrawerComponent: TabsComponent,
+  },
+};
