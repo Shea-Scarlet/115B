@@ -6,7 +6,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatRipple } from "@angular/material/core";
 
 const meta: Meta<TabDrawerButtonComponent> = {
-  title: 'Tab Drawer Button',
+  title: 'Onboarding/Tab-Drawer-Button',
   tags: ['autodocs'],
   component: TabDrawerButtonComponent,
   decorators: [

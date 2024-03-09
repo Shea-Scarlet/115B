@@ -1,4 +1,8 @@
-<app-onboarding-div bgColor="white" maxWidth="872px" padding="10px 24px">
+<app-onboarding-div
+  bgColor="white"
+  maxWidth="872px"
+  padding="10px 24px"
+>
   <app-onboarding-div
     display="flex"
     flexDirection="row"
@@ -19,8 +23,18 @@
         justifyContent="center"
         alignItems="left"
       >
-        <p><strong>{{ title }}</strong></p>
+        <app-onboarding-div
+          display="flex"
+          flexDirection="row"
+          gap="10px"
+        >
+          <strong
+            ><p>{{ title }}</p></strong
+          >
+          <p [ngStyle]="{ color: isOptional ? 'grey' : 'inherit' }">{{ isOptional ? '(Optional)' : '' }}</p>
+        </app-onboarding-div>
         <p>{{ subtext }}</p>
+        <YesNoButtons *ngIf="hasBinaryButton"></YesNoButtons>
       </app-onboarding-div>
     </app-onboarding-div>
     <app-onboarding-div
@@ -33,6 +47,7 @@
       <ng-container *ngFor="let button of buttons; let i = index">
         <PopUpForm-Button [label]="button.label"></PopUpForm-Button>
       </ng-container>
+      <PopUpDialogue-Button></PopUpDialogue-Button>
     </app-onboarding-div>
   </app-onboarding-div>
 </app-onboarding-div>

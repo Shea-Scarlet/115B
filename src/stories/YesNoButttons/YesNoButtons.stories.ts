@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
-import { YesNoButtons} from './YesNoButtons.component';
+import { YesNoButtonsComponent} from './YesNoButtons.component';
 
-const meta: Meta<YesNoButtons> = {
+const meta: Meta<YesNoButtonsComponent> = {
   title: 'Yes No Buttons',
-  component: YesNoButtons,
+  component: YesNoButtonsComponent,
   tags: ['autodocs'],
   parameters: {
     layout: 'fullscreen',
@@ -20,7 +20,7 @@ const meta: Meta<YesNoButtons> = {
 };
 //
 export default meta;
-type Story = StoryObj<YesNoButtons>;
+type Story = StoryObj<YesNoButtonsComponent>;
 
 export const NoInput = {
   args:{

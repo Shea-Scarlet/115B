@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 
 import { YesNoExpButton } from './YesNoExpButton.component';
-import { YesNoButtons } from '../YesNoButttons/YesNoButtons.component'; 
-import { BaseModalComponent } from '../Base Modal/BaseModal.component'; 
+import { YesNoButtonsComponent } from '../YesNoButttons/YesNoButtons.component';
+import { BaseModalComponent } from '../Base Modal/BaseModal.component';
 import {CardComponent} from '../Card/Card.component';
 import {SaveContinueComponent} from '../SaveContinue/SaveContinue.component';
 
@@ -38,8 +38,8 @@ export const NoInput = {
 }
 
 export const FollowUpYesNo = {
-  args:{  
-    DynamicComponent:YesNoButtons
+  args:{
+    DynamicComponent:YesNoButtonsComponent
   }
 }
 

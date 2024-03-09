@@ -3,7 +3,8 @@
 
 div{
     display: flex;
-    padding-left: 2.8125rem;
+    /* padding-left: 2.8125rem; */
+    padding-top: 10px;
     align-items: center;
     gap: 0.75rem;
 
@@ -14,7 +15,7 @@ div{
   .selected.yes {
     border-radius: 0.3125rem;
 background: var(--Foundation-Blue-blue-300, #54A1DE);
-    
+
     color: var(--Color, #FFF);
     font-family: Rubik;
     font-size: 1rem;
@@ -22,7 +23,7 @@ background: var(--Foundation-Blue-blue-300, #54A1DE);
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .yes {
     display: inline-block;
     width: 5rem;
@@ -39,7 +40,7 @@ background: var(--Foundation-Blue-blue-300, #54A1DE);
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .selected.no {
     border-radius: 0.3125rem;
     background: var(--warning, #A81121);
@@ -50,7 +51,7 @@ background: var(--Foundation-Blue-blue-300, #54A1DE);
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .no {
     display: inline-block;
     width: 5rem;

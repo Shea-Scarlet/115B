@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/angular";
 import { TabsComponent } from "./tabs.component";
 
 const meta: Meta<TabsComponent> = {
-  title: 'Tab Drawer',
+  title: 'Onboarding/Tab-Drawer',
   component: TabsComponent,
   tags: ['autodocs'],
   parameters: {
