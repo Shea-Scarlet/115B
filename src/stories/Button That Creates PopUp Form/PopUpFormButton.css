@@ -14,9 +14,7 @@
   z-index:99;
 }
 
-.popUpComponent{
-  position:absolute;
-  z-index: 100;
-  top:0;
-  left: 0;
+.mat-dialog-container.custom-dialog-container {
+  padding: 0px;
+  border-radius: 0px;
 }

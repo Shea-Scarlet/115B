@@ -34,3 +34,8 @@ $my-angular-storybook-project-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($my-angular-storybook-project-theme);
+
+.mat-dialog-container.custom-dialog-container {
+  padding: 0px;
+  border-radius: 0px;
+}

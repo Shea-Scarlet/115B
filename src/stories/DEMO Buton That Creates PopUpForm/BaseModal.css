@@ -1,0 +1,105 @@
+
+.modal-base {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 20px auto; /* Center the frame */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+
+}
+  
+  .modal-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgba(0, 37, 84);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    flex: 1 30% 300px;
+    gap: 10px 0px;
+    color: white;
+  } 
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    gap: 10px;
+    flex: 40% 1 400px;
+  }
+
+  .default-card {
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    padding-left: 20px;
+    margin: 0px; 
+    justify-content: flex-end;
+    display: flex;
+  } 
+
+  .default-footer-button {
+    background-color: #007bff; /* Default blue color */
+    color: #fff;              /* White text */
+    border: none;             /* Remove default border */
+    padding: 8px 20px;       /* Add padding */
+    border-radius: 20px;       /* Slightly rounded corners */
+    cursor: pointer;          /* Indicate it's clickable */
+    text-transform: uppercase; /* Optional: Uppercase text */
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
+                0 2px 2px 0 rgba(0,0,0,.14), 
+                0 1px 5px 0 rgba(0,0,0,.12); /* Subtle shadow */
+  }
+  
+  .modal-footer {
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 1 30% 100px;
+    border-top: 2px solid rgba(88, 111, 142, 0.2);
+    justify-content: flex-end;
+  }
+
+  .tab-drawer {
+    flex: 0 1 50px;
+    padding: 10px;
+    background-color: rgba(0, 37, 84);
+    border-top: 2px solid rgba(88, 111, 142, 0.2);
+  }
+
+  .page-label-text {
+    font-size: 10px;
+    margin: 0px;
+    color: rgba(88, 111, 142);
+  }
+
+  .header-text {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .subtitle-text {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+
+  
