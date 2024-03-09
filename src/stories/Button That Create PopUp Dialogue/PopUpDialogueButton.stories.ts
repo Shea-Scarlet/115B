@@ -1,18 +1,26 @@
-import type { Meta, StoryObj} from '@storybook/angular';
-import { moduleMetadata } from '@storybook/angular';
-import { CommonModule } from '@angular/common';
-import { PopUpDialogueButtonComponent } from './PopUpDialogueButton.component';
+import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {PopUpDialogueButtonComponent, PopUpDialogue } from './PopUpDialogueButton.component'; // Replace 'your-component-file' with the actual file name
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<PopUpDialogueButtonComponent> = {
   title: 'Pop Up Dialogue Buttons',
-  component: PopUpDialogueButtonComponent,
+  component:PopUpDialogueButtonComponent,
   tags: ['autodocs'],
-  parameters: {
+  decorators: [
+    moduleMetadata({
+      imports: [MatDialogModule, MatButtonModule, BrowserAnimationsModule],
+      declarations: [PopUpDialogue],
+    }),
+  ],
+  parameters:{
     docs:{
       description:{
         component: "The Pop Up Dialogue button renders a pop up\
-         dialogue window when clicked."
+         dialogue window when clicked. Angular Material is used to\
+         generate this component. Click outside of the dialogue popup\
+         to close it."
       }
     }
   },
@@ -23,7 +31,6 @@ const meta: Meta<PopUpDialogueButtonComponent> = {
   }),
   argTypes: {},
 }
-
 export default meta;
 type Story = StoryObj<PopUpDialogueButtonComponent>;
 

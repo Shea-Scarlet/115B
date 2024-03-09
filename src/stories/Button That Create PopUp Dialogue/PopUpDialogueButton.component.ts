@@ -1,47 +1,49 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
+import { Component, Input, Inject} from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'PopUpDialogue-Button',
   standalone: true,
-  imports: [CommonModule],
-  template: ` 
-    <div [ngClass]="{'OuterDiv': true}">
-      <div [ngClass]="{'DialogueBox': true}" *ngIf="dialogueVisible">
-        {{ DialogueText }}
-      </div>
-      <div [ngClass]="{'QuestionMarkButtonOuterDiv': true}">
-        <button
-          type="button"
-          (click)="toggleDialogue()"
-          [ngClass]="{'QuestionMarkButton': true}"
-          > ?
-        </button>
-      </div>
-    <div>`,
+  template: `
+    <button class="QuestionMarkButton"(click)="openDialog()">?</button>`,
   styleUrls: ['./PopUpDialogueButton.css'],
-})
+  })
 export class PopUpDialogueButtonComponent {
+
   /**
    * Contents of Dialogue Box
-   *
    * @required
    */
   @Input()
   DialogueText = "Dialogue Text Here"
-  @Output() onClick = new EventEmitter<Event>();
 
-  /**
-   * By default, pop up dialogue box is hidden
-   */
-  dialogueVisible = false;
-  toggleDialogue() {
-    this.dialogueVisible = !this.dialogueVisible; // Toggle visibility
-    if (this.dialogueVisible) {
-      this.onClick.emit(); // Emit event when the dialogue becomes visible
-    }
+  constructor(public dialog: MatDialog) {}
+  openDialog() {
+    const dialogRef = this.dialog.open(PopUpDialogue, {
+      data: { DialogueText: this.DialogueText }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+}
+
+@Component({
+  selector: 'PopUpDialogue',
+  template: `
+    <div class = 'DialogueBox'>
+      {{ DialogueText }}
+    </div>
+  `,
+  styleUrls: ['./PopUpDialogueButton.css'],
+})
+export class PopUpDialogue {
+  DialogueText: string;
+
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {
+    this.DialogueText = this.data.DialogueText; // Assign data.DialogueText to local variable
   }
 }
