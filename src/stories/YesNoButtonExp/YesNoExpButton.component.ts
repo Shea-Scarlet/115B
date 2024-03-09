@@ -1,7 +1,5 @@
 import { Input, Component, ViewChild, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { YesNoButtons } from '../YesNoButttons/YesNoButtons.component';
-import type { User } from '../user';
 
 @Component({
   selector: 'YesNoExpButton',
@@ -27,7 +25,7 @@ import type { User } from '../user';
 })
 
 export class YesNoExpButton {
-  //set dynamic component to any function user wants 
+  //set dynamic component to any function user wants
 
 
   @ViewChild('dynamicComponentContainer', { read: ViewContainerRef }) dynamicComponentContainer!: ViewContainerRef;
@@ -45,7 +43,7 @@ export class YesNoExpButton {
       }
     }
   }
-  @Input() DynamicComponent: any; 
+  @Input() DynamicComponent: any;
 //DynamicComponent replace with wanted component to drop down
   loadDynamicComponent() {
     const dynamicComponentFactory = this.componentFactoryResolver.resolveComponentFactory(this.DynamicComponent);

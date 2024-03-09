@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/angular';
 import { OnboardingDivComponent } from './onboarding-div.component';
 
 export default {
-  title: 'OnboardingDiv',
+  title: 'Helper/Onboarding-Div',
   tags: ['autodocs'],
   component: OnboardingDivComponent,
   parameters: {

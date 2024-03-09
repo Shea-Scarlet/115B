@@ -1,11 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { ButtonInputs, PopUpFormButtonComponent } from '../../stories/Button That Creates PopUp Form/PopUpFormButton.component';
-import { OnboardingDivComponent } from '../onboarding-div/onboarding-div.component';
+import {
+  ButtonInputs,
+  PopUpFormButtonComponent,
+} from '../../stories/Button That Creates PopUp Form/PopUpFormButton.component';
 import { CheckmarkIconComponent } from './checkmarkIcon/checkmark-icon.component';
 import { PopUpDialogueButtonComponent } from '../../stories/Button That Create PopUp Dialogue/PopUpDialogueButton.component';
-import { QuestionmarkPopupIconComponent } from './questionmarkPopupIcon/questionmark-popup-icon.component';
+import { OnboardingDivComponent } from '../onboarding-div/onboarding-div.component';
+import { YesNoButtonsComponent } from '../../stories/YesNoButttons/YesNoButtons.component';
 
 @Component({
   selector: 'app-body-box',
@@ -16,17 +19,18 @@ import { QuestionmarkPopupIconComponent } from './questionmarkPopupIcon/question
     PopUpFormButtonComponent,
     OnboardingDivComponent,
     CheckmarkIconComponent,
-    QuestionmarkPopupIconComponent
+    PopUpDialogueButtonComponent,
+    YesNoButtonsComponent,
   ],
   templateUrl: './body-box.component.html',
-  styleUrl: './body-box.component.css'
+  styleUrl: './body-box.component.css',
 })
 export class BodyBoxComponent {
-  @Input() title: string = "Set up your account";
-  @Input() subtext: string = "Choose and set up your sign in method.";
+  @Input() title: string = 'Set up your account';
+  @Input() subtext: string = 'Choose and set up your sign in method.';
+  @Input() isOptional: boolean = false;
   @Input() taskCompleted: boolean = false;
-  @Input() buttons: ButtonInputs[] = [
-    {label: 'First Button'},
-    {label: 'Second Button'},
-  ]
+  @Input() hasBinaryButton: boolean = false;
+  @Input() buttons: ButtonInputs[] = [{ label: 'First Button' }, { label: 'Second Button' }];
+  @Input() dialogueText!: string;
 }

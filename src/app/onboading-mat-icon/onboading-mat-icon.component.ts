@@ -13,9 +13,13 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './onboading-mat-icon.component.css'
 })
 export class OnboadingMatIconComponent {
-  @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() iconName: string = 'home';
-  @Input() color: string = 'black';
+  @Input() size: 'sm' | 'md' | 'lg' = 'md';
+
+  /**
+   * Icon color (default: Primary color).
+   */
+  @Input() color: string = 'rgb(6, 174, 103)';
 
   styleObject: { [key: string]: string | undefined } = {};
 

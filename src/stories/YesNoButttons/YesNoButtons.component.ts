@@ -4,6 +4,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'YesNoButtons',
+  standalone: true,
   template: `
   <div>
     <button type="button" (click)="toggleSelection(true)" [class]="yesButtonClasses">Yes</button>
@@ -15,7 +16,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 
 //isYesSelected
 
-export class YesNoButtons {
+export class YesNoButtonsComponent {
   isYesSelected: boolean | null = null;
   get yesButtonClasses(): string {
     return this.isYesSelected === true ? 'selected yes' : 'yes';
