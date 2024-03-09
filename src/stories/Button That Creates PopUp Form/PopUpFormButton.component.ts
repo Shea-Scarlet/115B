@@ -1,5 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
+import { Component, Input, ComponentFactoryResolver, 
+  ViewContainerRef} from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 export interface ButtonInputs {
   label: string;
@@ -8,58 +9,41 @@ export interface ButtonInputs {
 @Component({
   selector: 'PopUpForm-Button',
   standalone: true,
-  imports: [CommonModule],
   template: `
-<button
-    type="button"
-    (click)="toggleModal()"
-    [ngClass]="classes"
-    >
-    {{ label }}
-  </button>
-      <div [ngClass]="{'popUpComponent': popUpForm}">
-    <ng-container #componentContainer></ng-container>
-  </div>
+    <button class="PopUpForm-Button" (click)="openDialog()">
+      {{ label }}
+    </button>
   `,
   styleUrls: ['./PopUpFormButton.css'],
 })
 export class PopUpFormButtonComponent {
-  @ViewChild('componentContainer', { read: ViewContainerRef }) componentContainer: ViewContainerRef;
-  constructor() {
-    this.componentContainer ??= {} as ViewContainerRef;
-  }
-
   /**
-   * Button contents
-   * @required`
-   */
-  @Input()
-  label = 'Button';
-  /**
-   * Input to accept another component
+   * Contents of Dialogue Box
    * @required
    */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  @Input()
+  label = "Button Text Here";
+
+  /**
+   * Component to be rendered
+   * @required
+   */
   @Input() customComponent: any;
 
-  loadComponent() {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const componentRef = this.componentContainer.createComponent(this.customComponent);
-  }
+  constructor(
+    private componentFactoryResolver: ComponentFactoryResolver,
+    private viewContainerRef: ViewContainerRef,
+    private dialog: MatDialog
+  ) {}
 
-  popUpForm = false;
-  toggleModal() {
-    this.popUpForm = true;
-    if (this.popUpForm){
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const componentRef = this.componentContainer.createComponent(this.customComponent);
-
-    }
-  }
-
-public get classes(): string[] {
-
-    return ['PopUpForm-Button',];
+  openDialog() {
+    const dialogRef = this.dialog.open(this.customComponent, {
+      data: { DialogueText: this.label },
+      panelClass: 'custom-dialog-container'
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 }
-
