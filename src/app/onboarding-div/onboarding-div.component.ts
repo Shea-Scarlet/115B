@@ -5,7 +5,11 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-onboarding-div',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './onboarding-div.component.html',
+  template: `
+    <div [ngStyle]="styleObject">
+      <ng-content></ng-content>
+    </div>
+  `,
   styleUrl: './onboarding-div.component.css'
 })
 export class OnboardingDivComponent {
