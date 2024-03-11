@@ -11,7 +11,7 @@ import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextBu
 @Component({
   selector: 'DEMOBaseModal',
   standalone: true,
-  imports: [CommonModule, BodyBoxComponent, TabComponent, TabsComponent],
+  imports: [CommonModule, BodyBoxComponent, TabComponent, TabsComponent, PrevNextButtonComponent],
   template: `
   <div class="modal-base">
       <div class="modal-header">
@@ -26,14 +26,15 @@ import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextBu
 
       <div class="modal-body">
         <div>
-          <app-body-box></app-body-box>
-          <app-body-box title = "Set up roles"></app-body-box>
-          <app-body-box title = "Review Scope of Work"></app-body-box>
+          <app-body-box [buttons]="[{ label: 'Single Sign On' }, { label: 'Multifactor Authentication' }]"></app-body-box>
+          <app-body-box title = "Set up roles" subtext="Set up roles for your organization." [buttons]="[{ label: 'Create Roles' }]"></app-body-box>
+          <app-body-box title = "Review Scope of Work" subtext = "Including diagram displaying how your system is set up." [buttons]="[{ label: 'Review' }]"></app-body-box>
+          <app-body-box title = "Verify Credentials" subtext = "Lets make sure everything is correct!" [buttons]="[{ label: 'Verify' }]"></app-body-box>
         </div>
       </div>
 
       <div class="modal-footer">
-        <!-- <PrevNext-Button></PrevNext-Button> -->
+        <PrevNext-Button></PrevNext-Button>
       </div>
     </div>
   `,
