@@ -11,7 +11,7 @@ import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextBu
 @Component({
   selector: 'DEMOBaseModal',
   standalone: true,
-  imports: [CommonModule, BodyBoxComponent, TabComponent, TabsComponent, PrevNextButtonComponent],
+  imports: [CommonModule, BodyBoxComponent, TabComponent, TabsComponent],
   template: `
   <div class="modal-base">
       <div class="modal-header">
@@ -33,7 +33,7 @@ import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextBu
       </div>
 
       <div class="modal-footer">
-        <PrevNext-Button></PrevNext-Button>
+        <!-- <PrevNext-Button></PrevNext-Button> -->
       </div>
     </div>
   `,
