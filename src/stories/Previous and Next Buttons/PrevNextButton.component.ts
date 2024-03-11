@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'PrevNext-Button',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <button
       *ngIf="value > 0"
@@ -78,10 +79,3 @@ export class PrevNextButtonComponent {
     return `PrevNext-Button PrevNext-Button--next PrevNext-Button--${this.size} ${mode}`;
   }
 }
-
-@NgModule({
-  declarations: [PrevNextButtonComponent],
-  imports: [CommonModule],
-  exports: [PrevNextButtonComponent]
-})
-export class PrevNextButtonModule { }
