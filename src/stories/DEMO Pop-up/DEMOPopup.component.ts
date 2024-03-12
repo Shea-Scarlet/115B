@@ -34,8 +34,8 @@ import { SaveContinueComponent } from '../SaveContinue/SaveContinue.component';
       </div>
 
       <div class="modal-footer">
-        <PrevNext-Button></PrevNext-Button>
-        <!-- <SaveContinueComponent></SaveContinueComponent> -->
+<!--        <PrevNext-Button></PrevNext-Button>-->
+        <SaveContinueComponent></SaveContinueComponent>
       </div>
     </div>
   `,
@@ -45,9 +45,9 @@ export class DEMOPopupComponent implements AfterViewInit{
 
   // loads components after initial modal loads for inserted components
   ngAfterViewInit() {
-    this.loadComponents(); 
+    this.loadComponents();
   }
-  
+
   // Card count for the default ngif cards I have conditionally displayed when no components are given
   @Input() defaultCardCount = 8;
   defaultCardsArray = new Array(this.defaultCardCount).fill(null);
@@ -68,7 +68,7 @@ export class DEMOPopupComponent implements AfterViewInit{
   @ViewChild('bodyContainer', { read: ViewContainerRef }) bodyContainer!: ViewContainerRef;
   @ViewChild('footerContainer', { read: ViewContainerRef }) footerContainer!: ViewContainerRef;
 
-  
+
   loadComponents() {
     if (this.tabDrawerComponent) {
       this.tabDrawerContainer.createComponent(this.tabDrawerComponent);

@@ -5,8 +5,8 @@ import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
   selector: 'SaveContinueComponent',
   standalone: true,
   imports: [CommonModule],
-  template: ` 
-<button
+  template: `
+<button class = "SaveContinue"
     type="button"
     (click)="toggleModal()"
     [ngClass]="classes"
@@ -16,7 +16,7 @@ import { Component, Input, ViewChild, ViewContainerRef} from '@angular/core';
       <div [ngClass]="{'SaveContinueComponent': popUpForm}">
     <ng-container #componentContainer></ng-container>
   </div>
-  <p>Last saved at: {{ lastSavedDateTime }}</p>
+<!--  <p>Last saved at: {{ lastSavedDateTime }}</p>-->
   `,
   styleUrls: ['./SaveContinue.css'],
 })
@@ -33,19 +33,19 @@ export class SaveContinueComponent {
    * @required`
    */
   @Input()
-  label = 'Button';
+  label = 'Save and Close';
   /**
    * Input to accept another component
    * @required
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  @Input() customComponent: any; 
+  @Input() customComponent: any;
 
   loadComponent() {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const componentRef = this.componentContainer.createComponent(this.customComponent);
   }
-  
+
   popUpForm = false;
   toggleModal() {
     this.popUpForm = !this.popUpForm;

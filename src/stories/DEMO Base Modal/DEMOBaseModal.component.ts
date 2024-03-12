@@ -44,9 +44,9 @@ export class DEMOBaseModalComponent implements AfterViewInit{
 
   // loads components after initial modal loads for inserted components
   ngAfterViewInit() {
-    this.loadComponents(); 
+    this.loadComponents();
   }
-  
+
   // Card count for the default ngif cards I have conditionally displayed when no components are given
   @Input() defaultCardCount = 8;
   defaultCardsArray = new Array(this.defaultCardCount).fill(null);
@@ -68,7 +68,7 @@ export class DEMOBaseModalComponent implements AfterViewInit{
   @ViewChild('bodyContainer', { read: ViewContainerRef }) bodyContainer!: ViewContainerRef;
   @ViewChild('footerContainer', { read: ViewContainerRef }) footerContainer!: ViewContainerRef;
 
-  
+
   loadComponents() {
     if (this.tabDrawerComponent) {
       this.tabDrawerContainer.createComponent(this.tabDrawerComponent);
