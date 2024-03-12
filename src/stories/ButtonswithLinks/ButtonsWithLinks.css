@@ -1,5 +1,12 @@
 .ButtonsWithLinks {
-  display: inline-block;
+  display: flex;
+padding: 0.5rem 1.875rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625rem;
+border-radius: 2.5rem;
+background: var(--Foundation-Green-green-400, #0BB26B);
+  /* display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -11,7 +18,8 @@
   gap: 0.625rem;
   border-radius: 2.5rem;
   background: var(--Foundation-Green-green-400, #0BB26B);
-  color: #D2D9E6;
+  
+  color: #D2D9E6; */
 
 /* Paragraph/P - Bold - 16pt Rubik */
   font-family: Rubik;
