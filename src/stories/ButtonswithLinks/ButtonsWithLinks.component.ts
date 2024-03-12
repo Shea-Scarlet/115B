@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ButtonsWithLinks',
+  standalone: true,
   template: `
     <button
       [ngClass]="classes.join(' ')"
