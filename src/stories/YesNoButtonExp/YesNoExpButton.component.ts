@@ -1,4 +1,4 @@
-import { Input, Component, ViewChild, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
+import { Input, Component, ViewChild, ViewContainerRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,16 +8,11 @@ import { CommonModule } from '@angular/common';
   template: `
     <article>
       <section class="YesNoExpButton">
-        <h2>Yes No Buttons Expansion Component</h2>
         <div class="button-container">
           <button type="button" (click)="toggleSelection(true)" [ngClass]="{ 'selected yes': isDialogExpanded === true }">Yes</button>
           <button type="button" (click)="toggleSelection(false)" [ngClass]="{ 'selected no': isDialogExpanded === false }">No</button>
         </div>
-        <div *ngIf="isDialogExpanded === true">
-          <h2>Second Question</h2>
-          <p>Do you want to perform another action?</p>
-        </div>
-        <ng-container #dynamicComponentContainer></ng-container>
+        <ng-container #componentContainer></ng-container>
       </section>
     </article>
   `,
@@ -26,29 +21,34 @@ import { CommonModule } from '@angular/common';
 
 export class YesNoExpButton {
   //set dynamic component to any function user wants
-
-
-  @ViewChild('dynamicComponentContainer', { read: ViewContainerRef }) dynamicComponentContainer!: ViewContainerRef;
+  @ViewChild('componentContainer', { read: ViewContainerRef }) componentContainer!: ViewContainerRef;
   isDialogExpanded: boolean | null = null;
+  componentCreated: boolean = false;
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
+  constructor() {
+    this.componentContainer ??= {} as ViewContainerRef;
+  }
+
+  /**
+   * Input to accept another component
+   * @required
+   */
+  @Input() customComponent: any;
+
+  loadComponent() {
+    const componentRef = this.componentContainer.createComponent(this.customComponent);
+  }
 
   toggleSelection(isYesSelected: boolean | null = null) {
     if (isYesSelected !== null) {
       this.isDialogExpanded = isYesSelected;
-      if (isYesSelected) {
-        this.loadDynamicComponent();
-      } else {
-        this.dynamicComponentContainer.clear();
+      if (isYesSelected && !this.componentCreated) {
+        const componentRef = this.componentContainer.createComponent(this.customComponent);
+        this.componentCreated = true;
+      } else if (!isYesSelected && this.componentCreated) {
+        this.componentContainer.clear();
+        this.componentCreated = false;
       }
     }
   }
-  @Input() DynamicComponent: any;
-//DynamicComponent replace with wanted component to drop down
-  loadDynamicComponent() {
-    const dynamicComponentFactory = this.componentFactoryResolver.resolveComponentFactory(this.DynamicComponent);
-    this.dynamicComponentContainer.clear();
-    const dynamicComponentRef = this.dynamicComponentContainer.createComponent(dynamicComponentFactory);
-  }
-}
-
+};

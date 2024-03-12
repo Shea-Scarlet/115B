@@ -17,8 +17,7 @@ button {
   background: var(--Foundation-Grey-grey-100, #D7DADD);
   border-width: .2px;
   color: var(--Color, #000000);
-  
-  font-family: Rubik;
+  font-family: "Rubik";
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -30,22 +29,12 @@ button {
   border-radius: 0.3125rem;
   background: var(--Foundation-Blue-blue-300, #54A1DE);
   color: var(--Color, #FFF);
-  font-family: Rubik;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .no {
   border-radius: 0.3125rem;
   background: var(--warning, #A81121);
   color: var(--Color, #FFF);
-  font-family: Rubik;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 /* Add more styles as needed */
