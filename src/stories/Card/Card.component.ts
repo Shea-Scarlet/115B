@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
   template: `
   <mat-card class="outter-card">
     <div class="card-content-container">
-      <div class = "card-image" *ngIf="imageUrl"> 
-        <img mat-card-md-image src="{{ imageUrl }}">
+      <div class = "card-image" *ngIf="imageUrl">
+        <img mat-card-sm-image src="{{ imageUrl }}">
       </div>
       <div class = "card-title-area">
         <mat-card-title class = "title-option">{{ title }}</mat-card-title>
@@ -35,7 +35,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./Card.css'],
 })
 export class CardComponent {
-  
+
   ngAfterViewInit() {
     this.loadComponents();
   }
@@ -44,7 +44,7 @@ export class CardComponent {
   @Input() explanation = "Explanation goes here!";
   @Input() dataField1 = "Some data = 123";
   @Input() dataField2 = "The other data = 098";
-  @Input() imageUrl = "https://material.angular.io/assets/img/examples/shiba2.jpg"; 
+  @Input() imageUrl = "https://material.angular.io/assets/img/examples/shiba2.jpg";
 
   @Input() checkboxComponent: any;
   @Input() infoComponent: any;
