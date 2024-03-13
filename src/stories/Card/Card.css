@@ -1,13 +1,10 @@
 /* Overall card container */
 .card-content-container {
-  display: flex; 
-  flex-direction: row; 
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  gap: 50px;
+  padding: 20px 30px;
+  gap: 25px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -16,11 +13,12 @@
   margin: auto;
   order: 1;
   flex: auto;
-  border-radius: 15px;
+  border-radius: 100px;
 }
 
 .title-option {
-  font-size: 15pt;
+  font-size: 13pt;
+  padding-bottom: 5px;
 }
 
 .explanation-option {
@@ -41,7 +39,7 @@
 
 }
 
-.checkbox-field {  
+.checkbox-field {
   margin: auto;
   order: 5;
   flex: auto;
@@ -64,6 +62,7 @@
 
 .outter-card {
   margin: 20px;
+  border-radius: 25px;
 }
 
 .outter-card:hover {
