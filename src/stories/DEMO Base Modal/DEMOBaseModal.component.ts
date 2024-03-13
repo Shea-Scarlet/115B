@@ -21,7 +21,7 @@ import { PrevNextButtonComponent } from '../Previous and Next Buttons/PrevNextBu
       </div>
 
       <div class="tab-drawer" >
-        <!-- <app-tabs></app-tabs> -->
+         <app-tabs></app-tabs>
       </div>
 
       <div class="modal-body">
