@@ -4,8 +4,8 @@
   font-size: 20px;
   width: 25px;
   height: 25px;
-  border: 3px solid;
-  border-radius: 50%;
+  /*border: 3px solid;*/
+  /*border-radius: 50%;*/
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .QuestionMarkButtonOuterDiv{
-  border: 0px solid;
+  /*border: 0px solid;*/
   height: 25px;
   width: 25px;
   align-items: flex-end;
@@ -43,5 +43,5 @@
   scrollbar-width: auto;
   scrollbar-color: #888 #f1f1f1;
   position: relative;
-  top: 0; 
+  top: 0;
 }

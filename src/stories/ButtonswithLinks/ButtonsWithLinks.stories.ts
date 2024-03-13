@@ -22,9 +22,7 @@ const meta: Meta<ButtonsWithLinksComponent> = {
     },
   }),
   argTypes: {
-    backgroundColor: {
-      control: 'color',
-    },
+
   },
 };
 

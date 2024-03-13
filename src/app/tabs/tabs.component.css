@@ -1,10 +1,11 @@
 .tab-buttons {
-  background: #002544;
+  background-color: rgba(0, 37, 84);
   display: flex;
   align-items: center;
   max-width: 920px;
   padding: 10px 0px;
   overflow-y: auto;
+  font-family: "Rubiks", sans-serif;
 }
 
 .tab-button {

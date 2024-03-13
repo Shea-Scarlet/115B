@@ -1,11 +1,14 @@
 import { Component, Input, Inject} from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatIconModule} from "@angular/material/icon";
+import { OnboadingMatIconComponent} from "../../app/onboading-mat-icon/onboading-mat-icon.component";
 
 @Component({
   selector: 'PopUpDialogue-Button',
   standalone: true,
+  imports: [OnboadingMatIconComponent],
   template: `
-    <button class="QuestionMarkButton"(click)="openDialog()">?</button>`,
+    <app-onboading-mat-icon iconName = "help_outline" (click)="openDialog()" color = "black"></app-onboading-mat-icon>`,
   styleUrls: ['./PopUpDialogueButton.css'],
   })
 export class PopUpDialogueButtonComponent {
