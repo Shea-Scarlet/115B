@@ -1,15 +1,16 @@
 import { Component, Input, ViewChild, ViewContainerRef, AfterViewInit  } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-
+import { NonAutomatedCheckoffButtonComponent } from '../NonAutomatedCheckoffButton/NonAutomatedCheckoffButton.component';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'Card',
   standalone: true,
-  imports: [MatCardModule],
+  imports: [MatCardModule, NonAutomatedCheckoffButtonComponent, CommonModule],
   template: `
   <mat-card class="outter-card">
     <div class="card-content-container">
-      <div class = "card-image">
-        <img mat-card-md-image src="{{ imageUrl }}" alt="Card Image">
+      <div class = "card-image" *ngIf="imageUrl"> 
+        <img mat-card-md-image src="{{ imageUrl }}">
       </div>
       <div class = "card-title-area">
         <mat-card-title class = "title-option">{{ title }}</mat-card-title>
@@ -21,10 +22,10 @@ import { MatCardModule } from '@angular/material/card';
         {{ dataField2 }} </div>
 
       <div class="checkbox-field">
-        <ng-container #checkboxField></ng-container> 
+        <NonAutomatedCheckoffButton></NonAutomatedCheckoffButton>
       </div>
 
-      <div class="info-component-container">
+      <div class="info-component-container" *ngif = "infoComponent">
         <ng-container #infoComponentContainer></ng-container>
       </div>
     </div>

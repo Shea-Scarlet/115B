@@ -1,16 +1,25 @@
 .SaveContinue {
-  position: relative;
-  font-family: "Rubiks, sans-serif";
-  font-weight: 700;
-  border: 0;
+  /*position: relative;*/
+  font-family: "Rubik", sans-serif;
+  /*font-weight: 700;*/
+  /*border: 0;*/
+  /*cursor: pointer;*/
+  /*line-height: 0;*/
+  /*color: white;*/
+  /*background-color: #02AE66;*/
+  /*font-size: 14px;*/
+  /*padding: 11px 20px;*/
+  /*margin-top: 15px;*/
+  /*z-index:99;*/
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
   cursor: pointer;
-  line-height: 0;
-  color: white;
-  background-color: #02AE66;
-  font-size: 14px;
-  padding: 11px 20px;
-  margin-top: 15px;
-  z-index:99;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
 }
 
 .popUpComponent{
